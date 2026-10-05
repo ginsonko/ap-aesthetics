@@ -1,0 +1,22 @@
+{
+  "name": "ap-aesthetics",
+  "version": "0.2.0",
+  "description": "Explainable audience cognition and emotion trajectories, creative comparisons and empirical calibration. Local CLI, MCP and Skill.",
+  "license": "MIT",
+  "repository": {"type":"git","url":"https://github.com/ginsonko/ap-aesthetics.git"},
+  "homepage": "https://github.com/ginsonko/ap-aesthetics#readme",
+  "type": "commonjs",
+  "main": "lib/api.js",
+  "bin": {"ap-aesthetics": "bin/cli.js", "ap-aesthetics-mcp": "bin/mcp.js"},
+  "engines": {"node": ">=20"},
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node --test tests/*.test.js",
+    "start": "node bin/mcp.js",
+    "serve": "node scripts/serve.js",
+    "install:skill": "node scripts/install-skill.js",
+    "data:emobank": "node scripts/public-data-emobank.js"
+  },
+  "dependencies": {"@modelcontextprotocol/sdk": "1.32.0"},
+  "files": ["bin", "lib", "web", "dist", "skills", "examples", "docs", "scripts", "index.html", "README.md", "README.zh-CN.md", "LICENSE", "NOTICE.md"]
+}

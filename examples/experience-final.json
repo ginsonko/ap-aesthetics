@@ -1,0 +1,1190 @@
+{
+  "schema": "ap-aesthetics/1",
+  "title": "给谁的伞 · 先体验后解释",
+  "subject": "first-time-adult-viewer",
+  "style": "bittersweet",
+  "profile": {
+    "name": "初次观看 · 重视关系",
+    "relationship": 1,
+    "memory": 1,
+    "lossSensitivity": 1,
+    "sensorySensitivity": 1,
+    "initialFamiliarity": 0.12,
+    "initialHabit": 0.45,
+    "initialFatigue": 0,
+    "initialExplanation": 0
+  },
+  "parameters": {
+    "surpriseThreshold": 0.08,
+    "dissonanceThreshold": 0.08,
+    "attentionTemperature": 1,
+    "attentionPersistence": 1.2,
+    "attentionSurprise": 1.1,
+    "attentionDissonance": 0.8,
+    "attentionQuestion": 1.3,
+    "attentionValue": 0.5,
+    "attentionContinuity": 0.6,
+    "attentionFatigue": 1.5,
+    "backgroundPriority": 0.15,
+    "gainMax": 0.8,
+    "gainHalf": 0.4,
+    "innerHalf": 15,
+    "innerRate": 0.045,
+    "questionHalf": 45,
+    "questionRate": 0.015,
+    "fatigueHalf": 80,
+    "fatigueRate": 0.025,
+    "familiarityRate": 0.003,
+    "habitRate": 0.0003,
+    "feelingHalf": 8,
+    "emotionHalf": 18,
+    "timeTolerance": 0.25,
+    "waitingScale": 30,
+    "spaceScale": 3,
+    "signalRate": 0.03,
+    "insightGain": 0.6,
+    "correctionGain": 0.4,
+    "closureGain": 0.5,
+    "valueChangeGain": 0.5,
+    "rewardRate": 0.012,
+    "penaltyRate": 0.016,
+    "boredomGain": 0.025,
+    "outcomeScale": 1,
+    "emotionGain": 1
+  },
+  "emotionModel": [
+    {
+      "id": "curiosity",
+      "label": "好奇",
+      "color": "#5281d8",
+      "terms": [
+        {
+          "weight": 0.9,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "unresolved"
+              },
+              {
+                "ref": "novelty"
+              }
+            ]
+          }
+        },
+        {
+          "weight": 0.45,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "uncertainty"
+              },
+              {
+                "op": "inv",
+                "args": [
+                  {
+                    "ref": "pressure"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "delight",
+      "label": "惊喜",
+      "color": "#e9a241",
+      "terms": [
+        {
+          "weight": 1.25,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "surprise"
+              },
+              {
+                "ref": "insight"
+              },
+              {
+                "ref": "safety"
+              }
+            ]
+          }
+        },
+        {
+          "weight": 0.6,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "surprise"
+              },
+              {
+                "ref": "care"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "joy",
+      "label": "愉悦",
+      "color": "#d99a40",
+      "terms": [
+        {
+          "weight": 0.55,
+          "expression": {
+            "ref": "pleasant"
+          }
+        },
+        {
+          "weight": 0.5,
+          "expression": {
+            "ref": "insight"
+          }
+        },
+        {
+          "weight": 0.35,
+          "expression": {
+            "ref": "craft"
+          }
+        },
+        {
+          "weight": 0.25,
+          "expression": {
+            "ref": "expectation"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tension",
+      "label": "紧张",
+      "color": "#d27e64",
+      "terms": [
+        {
+          "weight": 0.85,
+          "expression": {
+            "ref": "pressure"
+          }
+        },
+        {
+          "weight": 0.35,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "waiting"
+              },
+              {
+                "ref": "unresolved"
+              }
+            ]
+          }
+        },
+        {
+          "weight": 0.2,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "surprise"
+              },
+              {
+                "ref": "threat"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fear",
+      "label": "担忧/害怕",
+      "color": "#ac7186",
+      "terms": [
+        {
+          "weight": 1.4,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "pressure"
+              },
+              {
+                "ref": "threat"
+              }
+            ]
+          }
+        },
+        {
+          "weight": 0.35,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "threat"
+              },
+              {
+                "op": "inv",
+                "args": [
+                  {
+                    "ref": "safety"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "frustration",
+      "label": "挫败/烦躁",
+      "color": "#b37750",
+      "terms": [
+        {
+          "weight": 0.55,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "dissonance"
+              },
+              {
+                "ref": "complexity"
+              }
+            ]
+          }
+        },
+        {
+          "weight": 0.6,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "boredom"
+              },
+              {
+                "ref": "unresolved"
+              }
+            ]
+          }
+        },
+        {
+          "weight": 0.55,
+          "expression": {
+            "ref": "sensoryCost"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sadness",
+      "label": "悲伤/不舍",
+      "color": "#7588ad",
+      "terms": [
+        {
+          "weight": 0.8,
+          "expression": {
+            "ref": "loss"
+          }
+        },
+        {
+          "weight": 0.6,
+          "expression": {
+            "ref": "disappointment"
+          }
+        },
+        {
+          "weight": 0.35,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "memory"
+              },
+              {
+                "ref": "loss"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "warmth",
+      "label": "温暖/亲近",
+      "color": "#da8f83",
+      "terms": [
+        {
+          "weight": 0.8,
+          "expression": {
+            "ref": "care"
+          }
+        },
+        {
+          "weight": 0.35,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "memory"
+              },
+              {
+                "ref": "care"
+              }
+            ]
+          }
+        },
+        {
+          "weight": 0.2,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "safety"
+              },
+              {
+                "ref": "selfRelevance"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "moved",
+      "label": "感动",
+      "color": "#9d79ad",
+      "terms": [
+        {
+          "weight": 0.75,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "care"
+              },
+              {
+                "ref": "selfRelevance"
+              }
+            ]
+          }
+        },
+        {
+          "weight": 0.65,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "care"
+              },
+              {
+                "ref": "loss"
+              }
+            ]
+          }
+        },
+        {
+          "weight": 0.4,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "insight"
+              },
+              {
+                "ref": "care"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "nostalgia",
+      "label": "怀念",
+      "color": "#a58b70",
+      "terms": [
+        {
+          "weight": 0.8,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "memory"
+              },
+              {
+                "ref": "selfRelevance"
+              }
+            ]
+          }
+        },
+        {
+          "weight": 0.3,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "memory"
+              },
+              {
+                "ref": "loss"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "relieved",
+      "label": "释然",
+      "color": "#59a29b",
+      "terms": [
+        {
+          "weight": 0.9,
+          "expression": {
+            "ref": "relief"
+          }
+        },
+        {
+          "weight": 0.4,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "closure"
+              },
+              {
+                "ref": "safety"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "calm",
+      "label": "轻松/安宁",
+      "color": "#6ba291",
+      "terms": [
+        {
+          "weight": 0.7,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "safety"
+              },
+              {
+                "op": "inv",
+                "args": [
+                  {
+                    "ref": "pressure"
+                  }
+                ]
+              },
+              {
+                "op": "inv",
+                "args": [
+                  {
+                    "ref": "sensoryCost"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "weight": 0.3,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "reasonable"
+              },
+              {
+                "ref": "pleasant"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bored",
+      "label": "无聊/走神",
+      "color": "#949aa6",
+      "terms": [
+        {
+          "weight": 0.9,
+          "expression": {
+            "ref": "boredom"
+          }
+        },
+        {
+          "weight": 0.3,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "repetition"
+              },
+              {
+                "op": "inv",
+                "args": [
+                  {
+                    "ref": "care"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "awe",
+      "label": "震撼/敬畏",
+      "color": "#7e86bb",
+      "terms": [
+        {
+          "weight": 0.8,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "scale"
+              },
+              {
+                "ref": "surprise"
+              }
+            ]
+          }
+        },
+        {
+          "weight": 0.55,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "scale"
+              },
+              {
+                "ref": "craft"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "amused",
+      "label": "好笑/会心",
+      "color": "#c49442",
+      "terms": [
+        {
+          "weight": 0.9,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "playfulness"
+              },
+              {
+                "ref": "insight"
+              },
+              {
+                "ref": "safety"
+              }
+            ]
+          }
+        },
+        {
+          "weight": 0.55,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "playfulness"
+              },
+              {
+                "ref": "surprise"
+              },
+              {
+                "ref": "reasonable"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "confused",
+      "label": "困惑",
+      "color": "#7f84a2",
+      "terms": [
+        {
+          "weight": 0.5,
+          "expression": {
+            "ref": "dissonance"
+          }
+        },
+        {
+          "weight": 0.4,
+          "expression": {
+            "ref": "uncertainty"
+          }
+        },
+        {
+          "weight": 0.25,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "unresolved"
+              },
+              {
+                "ref": "complexity"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "angry",
+      "label": "愤慨",
+      "color": "#b97777",
+      "terms": [
+        {
+          "weight": 0.9,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "unfairness"
+              },
+              {
+                "ref": "loss"
+              }
+            ]
+          }
+        },
+        {
+          "weight": 0.7,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "unfairness"
+              },
+              {
+                "ref": "pressure"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "guilt",
+      "label": "内疚",
+      "color": "#968194",
+      "terms": [
+        {
+          "weight": 1.1,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "selfResponsibility"
+              },
+              {
+                "ref": "loss"
+              }
+            ]
+          }
+        },
+        {
+          "weight": 0.4,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "selfResponsibility"
+              },
+              {
+                "ref": "disappointment"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "rhythmic",
+      "label": "律动/跟随感",
+      "color": "#6b9ea2",
+      "terms": [
+        {
+          "weight": 0.8,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "timeMatch"
+              },
+              {
+                "ref": "pleasant"
+              }
+            ]
+          }
+        },
+        {
+          "weight": 0.3,
+          "expression": {
+            "op": "mul",
+            "args": [
+              {
+                "ref": "timeMatch"
+              },
+              {
+                "ref": "expectation"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "annotationNote": "原创短片人工线索标注；未用真实观众数据拟合。猜到、无感和没注意是允许的反证。两版本参数和艺术目标固定。这里只模拟影片时间，不包括交互页暂停填写的时长。",
+  "scenes": [
+    {
+      "id": "opening",
+      "title": "雨站",
+      "description": "标题淡入，雨的节律建立空间；有一个人、一把伞和一张椅子。",
+      "duration": 12,
+      "object": "雨站与伞",
+      "outcomesKnown": true,
+      "outcomes": [],
+      "cues": {
+        "actualNovel": 0.15,
+        "predictedNovel": 0.12,
+        "actualExpected": 0.75,
+        "predictedExpected": 0.75,
+        "explanation": 0.65,
+        "evidence": 0.75,
+        "resolution": 0.1,
+        "question": 0.15,
+        "load": 0.22,
+        "detail": 0.65,
+        "continuity": 0.9,
+        "relevance": 0.8,
+        "progress": 0.1,
+        "care": 0.05,
+        "memory": 0.08,
+        "loss": 0,
+        "threat": 0,
+        "safety": 0.92,
+        "selfRelevance": 0.5,
+        "unfairness": 0,
+        "selfResponsibility": 0,
+        "pleasant": 0.7,
+        "sensoryCost": 0.03,
+        "craft": 0.78,
+        "playfulness": 0,
+        "scale": 0.06,
+        "expectedInterval": 4,
+        "actualInterval": 4,
+        "order": 0.95,
+        "spatial": 0.9,
+        "distance": 1
+      }
+    },
+    {
+      "id": "odd-action",
+      "title": "把伞留给空椅",
+      "description": "女孩把伞留在看似空的椅旁。镜头构图没有显露椅下小猫，观众暂缺行为目的。",
+      "duration": 8,
+      "object": "雨站与伞",
+      "outcomesKnown": true,
+      "outcomes": [],
+      "cues": {
+        "actualNovel": 0.8,
+        "predictedNovel": 0.2,
+        "actualExpected": 0.22,
+        "predictedExpected": 0.85,
+        "explanation": 0.24,
+        "evidence": 0.7,
+        "resolution": 0,
+        "question": 0.72,
+        "load": 0.22,
+        "detail": 0.62,
+        "continuity": 0.9,
+        "relevance": 0.8,
+        "progress": 0.2,
+        "care": 0.15,
+        "memory": 0.08,
+        "loss": 0,
+        "threat": 0,
+        "safety": 0.92,
+        "selfRelevance": 0.5,
+        "unfairness": 0,
+        "selfResponsibility": 0,
+        "pleasant": 0.7,
+        "sensoryCost": 0.03,
+        "craft": 0.78,
+        "playfulness": 0,
+        "scale": 0.06,
+        "expectedInterval": 4,
+        "actualInterval": 4,
+        "order": 0.95,
+        "spatial": 0.9,
+        "distance": 1
+      }
+    },
+    {
+      "id": "question-held",
+      "title": "车要开了",
+      "description": "女孩走向车门；车灯扫过椅子下方，提供一处不完整的尾巴线索。",
+      "duration": 8,
+      "object": "雨站与伞",
+      "outcomesKnown": true,
+      "outcomes": [],
+      "cues": {
+        "actualNovel": 0.25,
+        "predictedNovel": 0.2,
+        "actualExpected": 0.35,
+        "predictedExpected": 0.8,
+        "explanation": 0.32,
+        "evidence": 0.75,
+        "resolution": 0.08,
+        "question": 0.35,
+        "load": 0.22,
+        "detail": 0.32,
+        "continuity": 0.9,
+        "relevance": 0.8,
+        "progress": 0.25,
+        "care": 0.15,
+        "memory": 0.08,
+        "loss": 0,
+        "threat": 0,
+        "safety": 0.92,
+        "selfRelevance": 0.5,
+        "unfairness": 0,
+        "selfResponsibility": 0,
+        "pleasant": 0.7,
+        "sensoryCost": 0.03,
+        "craft": 0.78,
+        "playfulness": 0,
+        "scale": 0.06,
+        "expectedInterval": 4,
+        "actualInterval": 4,
+        "order": 0.95,
+        "spatial": 0.9,
+        "distance": 1
+      }
+    },
+    {
+      "id": "reveal",
+      "title": "椅子下的小猫",
+      "description": "车灯和镜头下降显露伞正在保护的小猫，行为获得具体解释。",
+      "duration": 8,
+      "object": "雨站与伞",
+      "outcomesKnown": true,
+      "outcomes": [],
+      "cues": {
+        "actualNovel": 0.9,
+        "predictedNovel": 0.2,
+        "actualExpected": 0.92,
+        "predictedExpected": 0.85,
+        "explanation": 0.96,
+        "evidence": 0.97,
+        "resolution": 0.9,
+        "question": 0.03,
+        "load": 0.22,
+        "detail": 0.9,
+        "continuity": 0.9,
+        "relevance": 0.8,
+        "progress": 0.9,
+        "care": 0.95,
+        "memory": 0.08,
+        "loss": 0,
+        "threat": 0,
+        "safety": 0.92,
+        "selfRelevance": 0.7,
+        "unfairness": 0,
+        "selfResponsibility": 0,
+        "pleasant": 0.7,
+        "sensoryCost": 0.03,
+        "craft": 0.78,
+        "playfulness": 0,
+        "scale": 0.06,
+        "expectedInterval": 4,
+        "actualInterval": 4,
+        "order": 0.95,
+        "spatial": 0.9,
+        "distance": 1
+      }
+    },
+    {
+      "id": "tail",
+      "title": "雨被挡在外面",
+      "description": "小猫在伞下安静蜷起；同一雨声降低，给关怀证据留下感受时间。",
+      "duration": 6,
+      "object": "雨站与伞",
+      "outcomesKnown": true,
+      "outcomes": [],
+      "cues": {
+        "actualNovel": 0.2,
+        "predictedNovel": 0.2,
+        "actualExpected": 0.95,
+        "predictedExpected": 0.95,
+        "explanation": 0.97,
+        "evidence": 0.75,
+        "resolution": 0.8,
+        "question": 0,
+        "load": 0.22,
+        "detail": 0.28,
+        "continuity": 0.9,
+        "relevance": 0.8,
+        "progress": 1,
+        "care": 0.98,
+        "memory": 0.25,
+        "loss": 0,
+        "threat": 0,
+        "safety": 0.92,
+        "selfRelevance": 0.7,
+        "unfairness": 0,
+        "selfResponsibility": 0,
+        "pleasant": 0.85,
+        "sensoryCost": 0.03,
+        "craft": 0.78,
+        "playfulness": 0,
+        "scale": 0.06,
+        "expectedInterval": 4,
+        "actualInterval": 4,
+        "order": 0.95,
+        "spatial": 0.9,
+        "distance": 1
+      }
+    },
+    {
+      "id": "record",
+      "title": "先记录你的反应",
+      "description": "中性邀请记录刚才的注意对象与感受，尚不显示命名预测。",
+      "duration": 7,
+      "object": "观察自己的体验",
+      "outcomesKnown": true,
+      "outcomes": [],
+      "cues": {
+        "actualNovel": 0.15,
+        "predictedNovel": 0.12,
+        "actualExpected": 0.75,
+        "predictedExpected": 0.75,
+        "explanation": 0.8,
+        "evidence": 0.75,
+        "resolution": 0.1,
+        "question": 0.15,
+        "load": 0.22,
+        "detail": 0.45,
+        "continuity": 0.9,
+        "relevance": 0.8,
+        "progress": 0.5,
+        "care": 0.35,
+        "memory": 0.08,
+        "loss": 0,
+        "threat": 0,
+        "safety": 0.92,
+        "selfRelevance": 0.5,
+        "unfairness": 0,
+        "selfResponsibility": 0,
+        "pleasant": 0.7,
+        "sensoryCost": 0.03,
+        "craft": 0.78,
+        "playfulness": 0,
+        "scale": 0.06,
+        "expectedInterval": 4,
+        "actualInterval": 4,
+        "order": 0.95,
+        "spatial": 0.9,
+        "distance": 1
+      }
+    },
+    {
+      "id": "explain",
+      "title": "制作前写下的预测",
+      "description": "对照空椅问题、小猫解释和关怀三条有区别的链路，不声称各人必然命中。",
+      "duration": 25,
+      "object": "观察自己的体验",
+      "outcomesKnown": true,
+      "outcomes": [],
+      "cues": {
+        "actualNovel": 0.15,
+        "predictedNovel": 0.12,
+        "actualExpected": 0.75,
+        "predictedExpected": 0.75,
+        "explanation": 0.94,
+        "evidence": 0.75,
+        "resolution": 0.7,
+        "question": 0.15,
+        "load": 0.42,
+        "detail": 0.8,
+        "continuity": 0.9,
+        "relevance": 0.8,
+        "progress": 0.9,
+        "care": 0.38,
+        "memory": 0.08,
+        "loss": 0,
+        "threat": 0,
+        "safety": 0.92,
+        "selfRelevance": 0.5,
+        "unfairness": 0,
+        "selfResponsibility": 0,
+        "pleasant": 0.7,
+        "sensoryCost": 0.03,
+        "craft": 0.8,
+        "playfulness": 0,
+        "scale": 0.06,
+        "expectedInterval": 4,
+        "actualInterval": 4,
+        "order": 0.95,
+        "spatial": 0.9,
+        "distance": 1
+      }
+    },
+    {
+      "id": "skepticism",
+      "title": "解释也可以被怀疑",
+      "description": "给出猜到、无感的失误条件，允许怀疑解释；在提示怀疑前邀请再次记录。",
+      "duration": 23,
+      "object": "观察自己的体验",
+      "outcomesKnown": true,
+      "outcomes": [],
+      "cues": {
+        "actualNovel": 0.3,
+        "predictedNovel": 0.25,
+        "actualExpected": 0.75,
+        "predictedExpected": 0.75,
+        "explanation": 0.91,
+        "evidence": 0.9,
+        "resolution": 0.5,
+        "question": 0.18,
+        "load": 0.35,
+        "detail": 0.72,
+        "continuity": 0.9,
+        "relevance": 0.8,
+        "progress": 0.92,
+        "care": 0.3,
+        "memory": 0.08,
+        "loss": 0,
+        "threat": 0,
+        "safety": 0.92,
+        "selfRelevance": 0.5,
+        "unfairness": 0,
+        "selfResponsibility": 0,
+        "pleasant": 0.7,
+        "sensoryCost": 0.03,
+        "craft": 0.78,
+        "playfulness": 0,
+        "scale": 0.06,
+        "expectedInterval": 4,
+        "actualInterval": 4,
+        "order": 0.95,
+        "spatial": 0.9,
+        "distance": 1
+      }
+    },
+    {
+      "id": "compare",
+      "title": "比较真实剪辑",
+      "description": "将早揭晓与长等待作为不同取舍，说明公式只提出待校准预测。",
+      "duration": 21,
+      "object": "创作工具",
+      "outcomesKnown": true,
+      "outcomes": [],
+      "cues": {
+        "actualNovel": 0.15,
+        "predictedNovel": 0.12,
+        "actualExpected": 0.75,
+        "predictedExpected": 0.75,
+        "explanation": 0.96,
+        "evidence": 0.96,
+        "resolution": 0.7,
+        "question": 0.06,
+        "load": 0.32,
+        "detail": 0.7,
+        "continuity": 0.9,
+        "relevance": 0.8,
+        "progress": 0.97,
+        "care": 0.35,
+        "memory": 0.08,
+        "loss": 0,
+        "threat": 0,
+        "safety": 0.92,
+        "selfRelevance": 0.5,
+        "unfairness": 0,
+        "selfResponsibility": 0,
+        "pleasant": 0.7,
+        "sensoryCost": 0.03,
+        "craft": 0.85,
+        "playfulness": 0,
+        "scale": 0.06,
+        "expectedInterval": 4,
+        "actualInterval": 4,
+        "order": 0.95,
+        "spatial": 0.9,
+        "distance": 1
+      }
+    },
+    {
+      "id": "close",
+      "title": "何时留白",
+      "description": "回到伞与猫的安静画面，邀请提供真实反馈。",
+      "duration": 8,
+      "object": "雨站与伞",
+      "outcomesKnown": true,
+      "outcomes": [],
+      "cues": {
+        "actualNovel": 0.15,
+        "predictedNovel": 0.12,
+        "actualExpected": 0.75,
+        "predictedExpected": 0.75,
+        "explanation": 0.96,
+        "evidence": 0.95,
+        "resolution": 0.65,
+        "question": 0,
+        "load": 0.1,
+        "detail": 0.2,
+        "continuity": 0.9,
+        "relevance": 0.8,
+        "progress": 1,
+        "care": 0.72,
+        "memory": 0.08,
+        "loss": 0,
+        "threat": 0,
+        "safety": 0.92,
+        "selfRelevance": 0.5,
+        "unfairness": 0,
+        "selfResponsibility": 0,
+        "pleasant": 0.85,
+        "sensoryCost": 0.03,
+        "craft": 0.78,
+        "playfulness": 0,
+        "scale": 0.06,
+        "expectedInterval": 4,
+        "actualInterval": 4,
+        "order": 0.95,
+        "spatial": 0.9,
+        "distance": 1
+      }
+    }
+  ]
+}

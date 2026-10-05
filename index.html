@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AP 观众心景 · 创作与体验</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;background:#0e1724;color:#e5e9ef}*{box-sizing:border-box}body{margin:0}main{max-width:1120px;margin:auto;padding:46px 28px 32px}.top{display:flex;justify-content:space-between;gap:24px;color:#95adb9;font-size:13px;letter-spacing:.12em}.brand{font-weight:700;color:#efc18b}h1{font-size:clamp(38px,6vw,70px);line-height:1.15;margin:68px 0 24px;letter-spacing:-.03em}h1 em{font-style:normal;color:#efc18b}.lead{max-width:790px;font-size:18px;line-height:1.9;color:#afbece}.cards{display:grid;grid-template-columns:1.2fr 1fr;gap:22px;margin:42px 0}.card{border:1px solid #344252;border-radius:20px;background:#142133;padding:30px;text-decoration:none;color:inherit;transition:transform .2s,border-color .2s}.card:hover{border-color:#efc18b;transform:translateY(-3px)}.card:first-child{background:linear-gradient(130deg,#26333d,#15283b)}.kicker{font-size:12px;letter-spacing:.14em;color:#efc18b}.card h2{font-size:27px;margin:20px 0 10px}.card p{line-height:1.85;color:#aebed0;margin-bottom:32px}.button{display:inline-block;padding:12px 17px;border:1px solid #546575;border-radius:10px;font-size:14px}.card:first-child .button{background:#efc18b;color:#192533;border-color:transparent}.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;padding:28px 0}.notes h3{font-size:16px}.notes p{font-size:14px;color:#9fb0c4;line-height:1.9}.links{border-top:1px solid #2a3949;padding-top:25px;display:flex;gap:24px;flex-wrap:wrap;font-size:13px}a{color:#a9c8db}.foot{font-size:12px;color:#8193a7;line-height:1.8;margin-top:26px}@media(max-width:650px){main{padding:25px 20px}h1{margin-top:48px}.cards,.notes{grid-template-columns:1fr}.lead{font-size:16px}.card{padding:25px}.top{letter-spacing:.04em;font-size:11px}}
+</style></head><body><main>
+<div class="top"><span class="brand">AP / 观众心景</span><span>CREATIVE HYPOTHESES · v0.2</span></div>
+<h1>让作品的情绪，<br><em>成为可以推敲的设计。</em></h1>
+<p class="lead">观众为什么在这里停住，又在那里走神？<br>沿着作品的时间线，观察注意、期待、理解和混合情绪。比较改稿，再让真实反馈纠正我们的预测。</p>
+<section class="cards">
+<a class="card" href="demo/index.html"><span class="kicker">01 / 体验作品 · 正在重创</span><h2>让画面与声音，配得上故事。</h2><p>新版将重新设计内容与视听。原 126 秒图解样片保留作技术参考；它已通过播放检查，但画面与配音未获用户认可。</p><span class="button">查看原版技术样片 →</span></a>
+<a class="card" href="web/index.html"><span class="kicker">02 / 开始创作</span><h2>把一个作品放到时间线上。</h2><p>查看 47 个状态与 19 类组合情绪，编辑线索、目标和观众画像，找出值得尝试的改动。</p><span class="button">打开计算器 →</span></a>
+</section>
+<section class="notes"><div><h3>多种感受同时存在</h3><p>理解带来的慰藉可以与悲伤并存。正负信号分别记录，不用一个分数抹平作品的复杂性。</p></div><div><h3>高分需要对应真实改稿</h3><p>保持观众和目标不变，修改作品后再比较。目标指数是一种假设，不代表有多少观众满意。</p></div><div><h3>让数据纠正模型</h3><p>独立标注作品与观众反应，按作品分开拟合与测试。校准模型可替换，原始基线始终保留。</p></div></section>
+<div class="links"><a href="https://github.com/ginsonko/ap-aesthetics">GitHub / Skill + MCP</a><a href="docs/MODEL.md">公式与已知边界</a><a href="docs/CALIBRATION.md">数据与校准方法</a><a href="dist/ap-aesthetics.html" download>下载离线计算器</a></div>
+<p class="foot">本地运行 · 无自动上传 · 无需 API Key。视频、音频和文本的线索由创作者或 Agent 提供；当前模型尚无经独立验证的人群预测准确率。群体也有差异，我们保留这些差异。</p>
+</main></body></html>

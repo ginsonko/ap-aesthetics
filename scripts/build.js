@@ -1,0 +1,12 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const root=path.resolve(__dirname,'..');
+const web=path.join(root,'web');
+let html=fs.readFileSync(path.join(web,'index.html'),'utf8');
+html=html.replace('<link rel="stylesheet" href="style.css">',()=>'<style>'+fs.readFileSync(path.join(web,'style.css'),'utf8')+'</style>');
+for(const name of ['catalog.js','engine.js','examples.js','app.js'])html=html.replace(`<script src="${name}"></script>`,()=>'<script>'+fs.readFileSync(path.join(web,name),'utf8').replace(/<\/script/gi,'<\\/script')+'</script>');
+fs.mkdirSync(path.join(root,'dist'),{recursive:true});
+fs.writeFileSync(path.join(root,'dist','ap-aesthetics.html'),html);
+const manifest={version:'0.2.0',file:'ap-aesthetics.html',bytes:Buffer.byteLength(html),sha256:crypto.createHash('sha256').update(html).digest('hex')};
+fs.writeFileSync(path.join(root,'dist','manifest.json'),JSON.stringify(manifest,null,2)+'\n');
+console.log(JSON.stringify(manifest));

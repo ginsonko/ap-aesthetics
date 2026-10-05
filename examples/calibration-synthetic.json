@@ -1,0 +1,555 @@
+{
+  "schema": "ap-aesthetics-observations/1",
+  "dataset_id": "synthetic-affine-software-demo",
+  "source": {
+    "url": "urn:ap-aesthetics:synthetic-software-demo",
+    "license": "CC0-1.0",
+    "label_kind": "synthetic software fixture; NOT human accuracy or population evidence"
+  },
+  "prediction_provenance": {
+    "method": "Fixed x values; intentionally simulated y=.15+.65*x verifies regression plumbing only.",
+    "independent_of_labels": true
+  },
+  "observations": [
+    {
+      "id": "train-0",
+      "work_id": "train-work-0",
+      "group_id": "train-group-0",
+      "split": "train",
+      "predictions": {
+        "warmth": 0,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.15,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "train-1",
+      "work_id": "train-work-1",
+      "group_id": "train-group-1",
+      "split": "train",
+      "predictions": {
+        "warmth": 0.09090909090909091,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.2090909090909091,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "train-2",
+      "work_id": "train-work-2",
+      "group_id": "train-group-2",
+      "split": "train",
+      "predictions": {
+        "warmth": 0.18181818181818182,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.2681818181818182,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "train-3",
+      "work_id": "train-work-3",
+      "group_id": "train-group-3",
+      "split": "train",
+      "predictions": {
+        "warmth": 0.2727272727272727,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.32727272727272727,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "train-4",
+      "work_id": "train-work-4",
+      "group_id": "train-group-4",
+      "split": "train",
+      "predictions": {
+        "warmth": 0.36363636363636365,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.38636363636363635,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "train-5",
+      "work_id": "train-work-5",
+      "group_id": "train-group-5",
+      "split": "train",
+      "predictions": {
+        "warmth": 0.45454545454545453,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.44545454545454544,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "train-6",
+      "work_id": "train-work-6",
+      "group_id": "train-group-6",
+      "split": "train",
+      "predictions": {
+        "warmth": 0.5454545454545454,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.5045454545454545,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "train-7",
+      "work_id": "train-work-7",
+      "group_id": "train-group-7",
+      "split": "train",
+      "predictions": {
+        "warmth": 0.6363636363636364,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.5636363636363636,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "train-8",
+      "work_id": "train-work-8",
+      "group_id": "train-group-8",
+      "split": "train",
+      "predictions": {
+        "warmth": 0.7272727272727273,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.6227272727272728,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "train-9",
+      "work_id": "train-work-9",
+      "group_id": "train-group-9",
+      "split": "train",
+      "predictions": {
+        "warmth": 0.8181818181818182,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.6818181818181819,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "train-10",
+      "work_id": "train-work-10",
+      "group_id": "train-group-10",
+      "split": "train",
+      "predictions": {
+        "warmth": 0.9090909090909091,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.740909090909091,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "train-11",
+      "work_id": "train-work-11",
+      "group_id": "train-group-11",
+      "split": "train",
+      "predictions": {
+        "warmth": 1,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.8,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "validation-0",
+      "work_id": "validation-work-0",
+      "group_id": "validation-group-0",
+      "split": "validation",
+      "predictions": {
+        "warmth": 0,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.15,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "validation-1",
+      "work_id": "validation-work-1",
+      "group_id": "validation-group-1",
+      "split": "validation",
+      "predictions": {
+        "warmth": 0.09090909090909091,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.2090909090909091,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "validation-2",
+      "work_id": "validation-work-2",
+      "group_id": "validation-group-2",
+      "split": "validation",
+      "predictions": {
+        "warmth": 0.18181818181818182,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.2681818181818182,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "validation-3",
+      "work_id": "validation-work-3",
+      "group_id": "validation-group-3",
+      "split": "validation",
+      "predictions": {
+        "warmth": 0.2727272727272727,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.32727272727272727,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "validation-4",
+      "work_id": "validation-work-4",
+      "group_id": "validation-group-4",
+      "split": "validation",
+      "predictions": {
+        "warmth": 0.36363636363636365,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.38636363636363635,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "validation-5",
+      "work_id": "validation-work-5",
+      "group_id": "validation-group-5",
+      "split": "validation",
+      "predictions": {
+        "warmth": 0.45454545454545453,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.44545454545454544,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "validation-6",
+      "work_id": "validation-work-6",
+      "group_id": "validation-group-6",
+      "split": "validation",
+      "predictions": {
+        "warmth": 0.5454545454545454,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.5045454545454545,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "validation-7",
+      "work_id": "validation-work-7",
+      "group_id": "validation-group-7",
+      "split": "validation",
+      "predictions": {
+        "warmth": 0.6363636363636364,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.5636363636363636,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "validation-8",
+      "work_id": "validation-work-8",
+      "group_id": "validation-group-8",
+      "split": "validation",
+      "predictions": {
+        "warmth": 0.7272727272727273,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.6227272727272728,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "validation-9",
+      "work_id": "validation-work-9",
+      "group_id": "validation-group-9",
+      "split": "validation",
+      "predictions": {
+        "warmth": 0.8181818181818182,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.6818181818181819,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "validation-10",
+      "work_id": "validation-work-10",
+      "group_id": "validation-group-10",
+      "split": "validation",
+      "predictions": {
+        "warmth": 0.9090909090909091,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.740909090909091,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "validation-11",
+      "work_id": "validation-work-11",
+      "group_id": "validation-group-11",
+      "split": "validation",
+      "predictions": {
+        "warmth": 1,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.8,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "test-0",
+      "work_id": "test-work-0",
+      "group_id": "test-group-0",
+      "split": "test",
+      "predictions": {
+        "warmth": 0,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.15,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "test-1",
+      "work_id": "test-work-1",
+      "group_id": "test-group-1",
+      "split": "test",
+      "predictions": {
+        "warmth": 0.09090909090909091,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.2090909090909091,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "test-2",
+      "work_id": "test-work-2",
+      "group_id": "test-group-2",
+      "split": "test",
+      "predictions": {
+        "warmth": 0.18181818181818182,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.2681818181818182,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "test-3",
+      "work_id": "test-work-3",
+      "group_id": "test-group-3",
+      "split": "test",
+      "predictions": {
+        "warmth": 0.2727272727272727,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.32727272727272727,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "test-4",
+      "work_id": "test-work-4",
+      "group_id": "test-group-4",
+      "split": "test",
+      "predictions": {
+        "warmth": 0.36363636363636365,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.38636363636363635,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "test-5",
+      "work_id": "test-work-5",
+      "group_id": "test-group-5",
+      "split": "test",
+      "predictions": {
+        "warmth": 0.45454545454545453,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.44545454545454544,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "test-6",
+      "work_id": "test-work-6",
+      "group_id": "test-group-6",
+      "split": "test",
+      "predictions": {
+        "warmth": 0.5454545454545454,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.5045454545454545,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "test-7",
+      "work_id": "test-work-7",
+      "group_id": "test-group-7",
+      "split": "test",
+      "predictions": {
+        "warmth": 0.6363636363636364,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.5636363636363636,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "test-8",
+      "work_id": "test-work-8",
+      "group_id": "test-group-8",
+      "split": "test",
+      "predictions": {
+        "warmth": 0.7272727272727273,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.6227272727272728,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "test-9",
+      "work_id": "test-work-9",
+      "group_id": "test-group-9",
+      "split": "test",
+      "predictions": {
+        "warmth": 0.8181818181818182,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.6818181818181819,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "test-10",
+      "work_id": "test-work-10",
+      "group_id": "test-group-10",
+      "split": "test",
+      "predictions": {
+        "warmth": 0.9090909090909091,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.740909090909091,
+        "unknown": null
+      },
+      "n": 5
+    },
+    {
+      "id": "test-11",
+      "work_id": "test-work-11",
+      "group_id": "test-group-11",
+      "split": "test",
+      "predictions": {
+        "warmth": 1,
+        "unknown": null
+      },
+      "observed": {
+        "warmth": 0.8,
+        "unknown": null
+      },
+      "n": 5
+    }
+  ]
+}

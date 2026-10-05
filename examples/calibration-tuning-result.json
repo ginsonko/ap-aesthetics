@@ -1,0 +1,304 @@
+{
+  "schema": "ap-aesthetics-parameter-search/1",
+  "candidate_id": "parameters-70e54fcf16569e471807",
+  "engine_version": "0.1.0",
+  "dataset_id": "synthetic-engine-recovery-only",
+  "dataset_hash": "c6095d054fe3012db3907bc8b2b8b1af9cd56c0f2574c1f778454081ff496166",
+  "selection_hash": "90228bf069298a478c666bb2a5fc4e58a3d21b4a8667633d3bd26f6067338984",
+  "selected_index": 2,
+  "parameters": {
+    "emotionGain": 0.7
+  },
+  "channel_map": {
+    "warmth": {
+      "kind": "emotion",
+      "id": "warmth"
+    }
+  },
+  "trials": [
+    {
+      "index": 0,
+      "parameters": {},
+      "train": {
+        "mse": 0.0015218776398971427,
+        "channels": {
+          "warmth": {
+            "rows": 2,
+            "groups": 2,
+            "mse": 0.0015218776398971427,
+            "rmse": 0.03901125017090766,
+            "mae": 0.037670585803700266,
+            "bias": 0.037670585803700266,
+            "pearson": 0.9999999999999996
+          }
+        }
+      },
+      "validation": {
+        "mse": 0.0015218776398971427,
+        "channels": {
+          "warmth": {
+            "rows": 2,
+            "groups": 2,
+            "mse": 0.0015218776398971427,
+            "rmse": 0.03901125017090766,
+            "mae": 0.037670585803700266,
+            "bias": 0.037670585803700266,
+            "pearson": 0.9999999999999996
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "parameters": {
+        "emotionGain": 0.3
+      },
+      "train": {
+        "mse": 0.0046722458362058105,
+        "channels": {
+          "warmth": {
+            "rows": 2,
+            "groups": 2,
+            "mse": 0.0046722458362058105,
+            "rmse": 0.06835382824835644,
+            "mae": 0.0659718575143382,
+            "bias": -0.0659718575143382,
+            "pearson": 0.9999999999999984
+          }
+        }
+      },
+      "validation": {
+        "mse": 0.0046722458362058105,
+        "channels": {
+          "warmth": {
+            "rows": 2,
+            "groups": 2,
+            "mse": 0.0046722458362058105,
+            "rmse": 0.06835382824835644,
+            "mae": 0.0659718575143382,
+            "bias": -0.0659718575143382,
+            "pearson": 0.9999999999999984
+          }
+        }
+      }
+    },
+    {
+      "index": 2,
+      "parameters": {
+        "emotionGain": 0.7
+      },
+      "train": {
+        "mse": 0,
+        "channels": {
+          "warmth": {
+            "rows": 2,
+            "groups": 2,
+            "mse": 0,
+            "rmse": 0,
+            "mae": 0,
+            "bias": 0,
+            "pearson": 1
+          }
+        }
+      },
+      "validation": {
+        "mse": 0,
+        "channels": {
+          "warmth": {
+            "rows": 2,
+            "groups": 2,
+            "mse": 0,
+            "rmse": 0,
+            "mae": 0,
+            "bias": 0,
+            "pearson": 1
+          }
+        }
+      }
+    },
+    {
+      "index": 3,
+      "parameters": {
+        "emotionGain": 1.3
+      },
+      "train": {
+        "mse": 0.004925979919983379,
+        "channels": {
+          "warmth": {
+            "rows": 2,
+            "groups": 2,
+            "mse": 0.004925979919983379,
+            "rmse": 0.07018532553164784,
+            "mae": 0.06778637821985757,
+            "bias": 0.06778637821985757,
+            "pearson": 0.9999999999999997
+          }
+        }
+      },
+      "validation": {
+        "mse": 0.004925979919983379,
+        "channels": {
+          "warmth": {
+            "rows": 2,
+            "groups": 2,
+            "mse": 0.004925979919983379,
+            "rmse": 0.07018532553164784,
+            "mae": 0.06778637821985757,
+            "bias": 0.06778637821985757,
+            "pearson": 0.9999999999999997
+          }
+        }
+      }
+    }
+  ],
+  "test": {
+    "mse": 0,
+    "channels": {
+      "warmth": {
+        "rows": 2,
+        "groups": 2,
+        "mse": 0,
+        "rmse": 0,
+        "mae": 0,
+        "bias": 0,
+        "pearson": 1
+      }
+    }
+  },
+  "baseline_test": {
+    "mse": 0.0015218776398971427,
+    "channels": {
+      "warmth": {
+        "rows": 2,
+        "groups": 2,
+        "mse": 0.0015218776398971427,
+        "rmse": 0.03901125017090766,
+        "mae": 0.037670585803700266,
+        "bias": 0.037670585803700266,
+        "pearson": 0.9999999999999996
+      }
+    }
+  },
+  "train_mean_baseline": {
+    "warmth": {
+      "train_mean": 0.13134319125814337,
+      "test": {
+        "rows": 2,
+        "groups": 2,
+        "mse": 0.0012768078258741972,
+        "rmse": 0.03573244780132194,
+        "mae": 0.03573244780132194,
+        "bias": 1.3877787807814457e-17,
+        "pearson": null
+      },
+      "test_improvement": {
+        "groups": 2,
+        "mean_mse_improvement": 0.0012768078258741972,
+        "ci95": [
+          0.001276807825874196,
+          0.001276807825874198
+        ],
+        "method": "deterministic percentile bootstrap of source-group mean paired squared-error differences",
+        "rounds": 300,
+        "limitation": "Descriptive uncertainty within this population and dataset, not a guarantee for new audiences or an individual."
+      }
+    }
+  },
+  "test_only_channels": {},
+  "source_documents": {
+    "train-work-0": {
+      "input_sha256": "67cb91d6712af4f001fcdfd50c4f6c5e52a521a9bed2317605ceba58aedb0b7f",
+      "scene_ids": [
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5",
+        "m6",
+        "m7",
+        "m8"
+      ]
+    },
+    "train-work-1": {
+      "input_sha256": "6740cf1187adbdf2f7e7b26c943861cc4b63a3794a79703cdb318f1d8f463df2",
+      "scene_ids": [
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5",
+        "m6",
+        "m7",
+        "m8"
+      ]
+    },
+    "validation-work-0": {
+      "input_sha256": "9726a5ce998c2dcc6d294204f0c4184c3219a181d949cea149b75128f4c14116",
+      "scene_ids": [
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5",
+        "m6",
+        "m7",
+        "m8"
+      ]
+    },
+    "validation-work-1": {
+      "input_sha256": "98d993a13977b8d885cd313d8be9859b34ab891612bd83011a46900dac2e2348",
+      "scene_ids": [
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5",
+        "m6",
+        "m7",
+        "m8"
+      ]
+    },
+    "test-work-0": {
+      "input_sha256": "71eae6725be8f5f3fdefc6572ccd3f20efed6486e8ff5d93818ce1c3279cab79",
+      "scene_ids": [
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5",
+        "m6",
+        "m7",
+        "m8"
+      ]
+    },
+    "test-work-1": {
+      "input_sha256": "84175fd9baca58007710270c67080105863cee0f90cc6e2fe1aa4238579a6313",
+      "scene_ids": [
+        "m1",
+        "m2",
+        "m3",
+        "m4",
+        "m5",
+        "m6",
+        "m7",
+        "m8"
+      ]
+    }
+  },
+  "selected_document_hashes": {
+    "train-work-0": "95488e7b7082dbca7222a50bd3818b477b6b7c643185105891e270a36dbd7ecd",
+    "train-work-1": "a24048a8246c6af064e09b5a16b16c01a86166d6f3cb1b903aae11f687d37339",
+    "validation-work-0": "eb95e0ca365be751ae7dc1e5d460ed1462ede4f3773290b34322740f818d501f",
+    "validation-work-1": "734f8a0768e87d1c3902ba447989286b804fd028accb978ec05505590ed8a308",
+    "test-work-0": "0ccfb37f27f3101e64d23471fc5c58b8c062185da1eaedb2d12e9b920a5952d2",
+    "test-work-1": "472504f2a1a3617682e4101616f42fcc06e9d61c8f52155e8a937362bf015b46"
+  },
+  "adoption": "Candidate only. Original documents and engine defaults were not changed. Test is reported after selection and must not be reused to tune again.",
+  "warnings": [
+    "train has fewer than five independent groups; uncertainty is poorly estimated.",
+    "validation has fewer than five independent groups; uncertainty is poorly estimated.",
+    "test has fewer than five independent groups; uncertainty is poorly estimated.",
+    "Prediction independence is a provenance declaration, not an automated proof; audit annotation timing and information access.",
+    "n is descriptive only. It does not turn repeated ratings of the same work into independent works."
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "schema": "ap-aesthetics-calibration/1",
+  "model_id": "affine-a475207f64b43cdcc0f4",
+  "dataset_id": "synthetic-affine-software-demo",
+  "dataset_hash": "611823ee747d8ddffed2a1718a8c8a8ebb53e0e28eef4bfa661bea3f0baaeadf",
+  "selection_hash": "839391e9433b4c853b1cd64bb09e291cb71708b1717b0dc5150a91d18791d8f4",
+  "source": {
+    "url": "urn:ap-aesthetics:synthetic-software-demo",
+    "license": "CC0-1.0",
+    "label_kind": "synthetic software fixture; NOT human accuracy or population evidence"
+  },
+  "channel_models": {
+    "warmth": {
+      "kind": "affine",
+      "slope": 0.6500000000000002,
+      "intercept": 0.1499999999999998,
+      "lambda": 0,
+      "train_mean": 0.4749999999999999,
+      "train_rows": 12,
+      "train_groups": 12
+    }
+  },
+  "report": {
+    "weighting": "Each source group has total weight 1 per channel; weight changes row importance within a group. n does not increase independent sample size.",
+    "selection": "Training fits coefficients; validation chooses identity or lambda; test is reported only after selection. No automatic adoption.",
+    "channels": {
+      "warmth": {
+        "selected_index": 1,
+        "trials": [
+          {
+            "kind": "identity",
+            "slope": 1,
+            "intercept": 0,
+            "lambda": null,
+            "train_mse": 0.012689393939393936,
+            "validation_mse": 0.012689393939393936
+          },
+          {
+            "kind": "affine",
+            "slope": 0.6500000000000002,
+            "intercept": 0.1499999999999998,
+            "lambda": 0,
+            "train_mse": 1.1940765655200862e-32,
+            "validation_mse": 1.1940765655200862e-32
+          },
+          {
+            "kind": "affine",
+            "slope": 0.6535181236673776,
+            "intercept": 0.14824093816631112,
+            "lambda": 0.001,
+            "train_mse": 0.0000012189660894432524,
+            "validation_mse": 0.0000012189660894432524
+          },
+          {
+            "kind": "affine",
+            "slope": 0.6822625698324024,
+            "intercept": 0.13386871508379872,
+            "lambda": 0.01,
+            "train_mse": 0.00010251026029150236,
+            "validation_mse": 0.00010251026029150236
+          },
+          {
+            "kind": "affine",
+            "slope": 0.8263358778625954,
+            "intercept": 0.061832061068702204,
+            "lambda": 0.1,
+            "train_mse": 0.0030623215430336213,
+            "validation_mse": 0.0030623215430336213
+          },
+          {
+            "kind": "affine",
+            "slope": 0.9686206896551725,
+            "intercept": -0.009310344827586303,
+            "lambda": 1,
+            "train_mse": 0.00975811533888228,
+            "validation_mse": 0.00975811533888228
+          }
+        ],
+        "splits": {
+          "train": {
+            "raw": {
+              "rows": 12,
+              "groups": 12,
+              "mse": 0.012689393939393936,
+              "rmse": 0.1126472100826023,
+              "mae": 0.09696969696969697,
+              "bias": 0.024999999999999984,
+              "pearson": 0.9999999999999996
+            },
+            "calibrated": {
+              "rows": 12,
+              "groups": 12,
+              "mse": 1.1940765655200862e-32,
+              "rmse": 1.0927381047259614e-16,
+              "mae": 7.864079757761526e-17,
+              "bias": -7.864079757761526e-17,
+              "pearson": 1
+            },
+            "train_mean_baseline": {
+              "rows": 12,
+              "groups": 12,
+              "mse": 0.04160984848484849,
+              "rmse": 0.20398492219977557,
+              "mae": 0.17727272727272733,
+              "bias": -6.47630097698008e-17,
+              "pearson": null
+            },
+            "improvement_vs_raw": {
+              "groups": 12,
+              "mean_mse_improvement": 0.012689393939393936,
+              "ci95": [
+                0.006277548209366392,
+                0.020101584022038557
+              ],
+              "method": "deterministic percentile bootstrap of source-group mean paired squared-error differences",
+              "rounds": 300,
+              "limitation": "Descriptive uncertainty within this population and dataset, not a guarantee for new audiences or an individual."
+            },
+            "improvement_vs_train_mean": {
+              "groups": 12,
+              "mean_mse_improvement": 0.04160984848484849,
+              "ci95": [
+                0.022405303030303015,
+                0.06256026170798899
+              ],
+              "method": "deterministic percentile bootstrap of source-group mean paired squared-error differences",
+              "rounds": 300,
+              "limitation": "Descriptive uncertainty within this population and dataset, not a guarantee for new audiences or an individual."
+            }
+          },
+          "validation": {
+            "raw": {
+              "rows": 12,
+              "groups": 12,
+              "mse": 0.012689393939393936,
+              "rmse": 0.1126472100826023,
+              "mae": 0.09696969696969697,
+              "bias": 0.024999999999999984,
+              "pearson": 0.9999999999999996
+            },
+            "calibrated": {
+              "rows": 12,
+              "groups": 12,
+              "mse": 1.1940765655200862e-32,
+              "rmse": 1.0927381047259614e-16,
+              "mae": 7.864079757761526e-17,
+              "bias": -7.864079757761526e-17,
+              "pearson": 1
+            },
+            "train_mean_baseline": {
+              "rows": 12,
+              "groups": 12,
+              "mse": 0.04160984848484849,
+              "rmse": 0.20398492219977557,
+              "mae": 0.17727272727272733,
+              "bias": -6.47630097698008e-17,
+              "pearson": null
+            },
+            "improvement_vs_raw": {
+              "groups": 12,
+              "mean_mse_improvement": 0.012689393939393936,
+              "ci95": [
+                0.006277548209366392,
+                0.020101584022038557
+              ],
+              "method": "deterministic percentile bootstrap of source-group mean paired squared-error differences",
+              "rounds": 300,
+              "limitation": "Descriptive uncertainty within this population and dataset, not a guarantee for new audiences or an individual."
+            },
+            "improvement_vs_train_mean": {
+              "groups": 12,
+              "mean_mse_improvement": 0.04160984848484849,
+              "ci95": [
+                0.022405303030303015,
+                0.06256026170798899
+              ],
+              "method": "deterministic percentile bootstrap of source-group mean paired squared-error differences",
+              "rounds": 300,
+              "limitation": "Descriptive uncertainty within this population and dataset, not a guarantee for new audiences or an individual."
+            }
+          },
+          "test": {
+            "raw": {
+              "rows": 12,
+              "groups": 12,
+              "mse": 0.012689393939393936,
+              "rmse": 0.1126472100826023,
+              "mae": 0.09696969696969697,
+              "bias": 0.024999999999999984,
+              "pearson": 0.9999999999999996
+            },
+            "calibrated": {
+              "rows": 12,
+              "groups": 12,
+              "mse": 1.1940765655200862e-32,
+              "rmse": 1.0927381047259614e-16,
+              "mae": 7.864079757761526e-17,
+              "bias": -7.864079757761526e-17,
+              "pearson": 1
+            },
+            "train_mean_baseline": {
+              "rows": 12,
+              "groups": 12,
+              "mse": 0.04160984848484849,
+              "rmse": 0.20398492219977557,
+              "mae": 0.17727272727272733,
+              "bias": -6.47630097698008e-17,
+              "pearson": null
+            },
+            "improvement_vs_raw": {
+              "groups": 12,
+              "mean_mse_improvement": 0.012689393939393936,
+              "ci95": [
+                0.006277548209366392,
+                0.020101584022038557
+              ],
+              "method": "deterministic percentile bootstrap of source-group mean paired squared-error differences",
+              "rounds": 300,
+              "limitation": "Descriptive uncertainty within this population and dataset, not a guarantee for new audiences or an individual."
+            },
+            "improvement_vs_train_mean": {
+              "groups": 12,
+              "mean_mse_improvement": 0.04160984848484849,
+              "ci95": [
+                0.022405303030303015,
+                0.06256026170798899
+              ],
+              "method": "deterministic percentile bootstrap of source-group mean paired squared-error differences",
+              "rounds": 300,
+              "limitation": "Descriptive uncertainty within this population and dataset, not a guarantee for new audiences or an individual."
+            }
+          }
+        }
+      }
+    },
+    "skipped": {
+      "unknown": "No observed training/validation labels; test-only or entirely unknown channel is not fitted."
+    },
+    "warnings": [
+      "Prediction independence is a provenance declaration, not an automated proof; audit annotation timing and information access.",
+      "n is descriptive only. It does not turn repeated ratings of the same work into independent works."
+    ]
+  },
+  "accuracy_claim": "Held-out dataset error for specified label channels only; not satisfaction probability, causal proof, or population-wide accuracy."
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>给谁的伞 · AP 观众心景</title><link rel="stylesheet" href="experience.css"></head>
+<body>
+<main>
+<header><a class="brand" href="../web/index.html">AP / 观众心景</a><span class="edition">一段 126 秒的体验 · 可被你否定</span></header>
+<section class="intro"><div><p class="eyebrow">先经历，再解释</p><h1>给谁的伞</h1><p class="lead">先看一个小故事。你不需要了解任何理论。<br>到了两个停顿处，留下当时真实的反应，再继续看。</p></div><div class="intro-side"><span class="pill">声音已准备好，点击播放</span><p>可以随时暂停。无感、没注意、早就猜到，<br>都是我们希望保留的答案。</p></div></section>
+<section class="screen" aria-label="体验短片"><video id="film" controls preload="metadata" playsinline poster="cover.png"><source src="experience.mp4" type="video/mp4">浏览器不支持视频，可下载 MP4。</video><div class="screen-foot"><span id="status" aria-live="polite">第一次观看时，尽量先不看后面的解释。</span><a href="experience.mp4" download>下载 MP4</a></div></section>
+<section class="response-panel" id="missing-media" hidden><p class="eyebrow">源码版 · 影片尚未渲染</p><h2>封面已经在这里，影片可以在本机生成。</h2><p>开源仓库保留制作源码、预测和封面，MP4 与本地旁白不随源码提交。请按 <a href="../docs/EXPERIENCE.md">本地制作说明</a>生成 <code>demo/experience.mp4</code> 后刷新；此过程不调用在线模型。你也可以先打开计算器或阅读预注册材料。</p><div class="actions"><a href="../web/index.html" class="ghost">打开计算器</a><a href="predictions.json" class="ghost">阅读预注册（含揭晓）</a></div></section>
+<section class="response-panel" id="response" hidden aria-labelledby="form-title" tabindex="-1">
+<p class="eyebrow" id="form-step">第一次记录</p><h2 id="form-title">刚才，你在想什么？</h2><p id="form-help">先用自己的词，不必挑我们提供的词。</p>
+<form id="response-form"><div id="fields"></div><div class="actions"><button class="primary" type="submit">保存这段反应并继续</button><button id="skip" type="button" class="ghost">先不记录，继续看</button></div><small>只保存在这个浏览器，不联网发送。不想回答的项可以空着。</small></form></section>
+<section class="results" id="results" hidden>
+<div class="result-head"><div><p class="eyebrow">把你的反应和预测分开</p><h2>现在可以打开那份预测。</h2><p>它在制作之前已写下。我们不把“任何反应”都当作命中。</p></div><button id="download" class="primary">下载我的匿名反馈 JSON</button></div>
+<div class="cards" id="prediction-cards"></div>
+<details><summary>看这条片子实际做过的版本比较</summary><div id="comparison"></div><p class="muted">这些数值是人工标注线索的模型输出，并不是观众实测。提前揭晓版可以得到更高目标分数；原版不被设成固定赢家。</p></details>
+<details><summary>查看我刚才填写的原始回答</summary><pre id="my-answers"></pre></details>
+<div class="actions"><a class="ghost" href="../web/index.html">打开完整计算器</a><button id="replay" class="ghost">重看短片</button><button id="reset" class="ghost">清除本机记录，重新开始</button></div>
+</section>
+<footer><p>这是一个创作工具的体验样片，尚未经过真实人群标定。一次对上不等于证明全部理论，一次没对上也不应被改写成成功。</p><p>原创图形与音效 · 本地合成中文旁白 · 字幕已内嵌 · <a href="predictions.json">预注册原件</a>（首次观看前打开会影响体验）</p></footer>
+</main>
+<script src="experience-data.js"></script><script src="experience.js"></script>
+</body></html>

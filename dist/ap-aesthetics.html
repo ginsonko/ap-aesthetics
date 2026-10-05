@@ -1,0 +1,587 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AP 观众心景 · 审美与认知轨迹</title><style>@charset "UTF-8";
+:root{--bg:#f3f3ed;--paper:#fdfdf9;--ink:#273d3c;--muted:#788380;--line:#dce2d9;--green:#406e64;--peach:#d7937f;--radius:15px;font-family:Inter,"Segoe UI","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg);font-size:14px}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit;color:inherit}button{border:1px solid var(--line);background:var(--paper);border-radius:8px;padding:8px 12px;cursor:pointer;transition:background .15s}button:hover{background:#e9eee6}button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--green);outline-offset:2px}input,select,textarea{border:1px solid var(--line);background:#fff;border-radius:7px;padding:7px 9px;max-width:100%;min-width:0}textarea{resize:vertical;line-height:1.55;width:100%}h1,h2,h3,p{margin:0}h1{font-size:clamp(24px,2.5vw,38px);font-weight:600;letter-spacing:-1px;line-height:1.4}h2{font-size:18px;font-weight:600}h3{font-size:14px;margin:10px 0 15px}.topbar{display:flex;align-items:center;gap:20px;padding:18px 3.5%;border-bottom:1px solid var(--line);background:#f9faf5}.brand{display:flex;align-items:center;gap:11px;white-space:nowrap}.brand-mark{border-radius:50%;background:var(--green);color:#fff;font-size:20px;width:43px;height:43px;display:grid;place-items:center;font-family:Georgia,serif}.brand strong{display:block;font-size:18px;letter-spacing:2px}.brand span:not(.brand-mark){display:block;font-size:11px;color:var(--muted);margin-top:3px}.version{color:var(--muted);font-size:11px;border:1px solid var(--line);padding:4px 8px;border-radius:20px}.toolbar{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}main{max-width:1700px;margin:auto;padding:34px 3.5% 20px}.hero{display:grid;grid-template-columns:1.65fr 1fr;gap:50px;align-items:center;margin:10px 0 30px}.eyebrow{font-size:9px;letter-spacing:1.8px;color:var(--green);font-weight:700;margin-bottom:9px}.hero>div>p:last-child{color:var(--muted);font-size:13px;margin-top:12px}.method-note{background:#e9eee5;border:1px solid #dbe3d5;border-radius:12px;padding:18px;font-size:12px;line-height:1.7}.method-note p{margin-top:7px;color:#738074}.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#628d66;margin-right:8px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:21px;box-shadow:0 2px 5px #213a3110}.controlbar{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr auto;align-items:end;gap:15px;padding:16px 20px}.controlbar label{display:flex;flex-direction:column;gap:7px;color:var(--muted);font-size:11px}.controlbar input,.controlbar select{font-size:13px;color:var(--ink)}.status{font-size:12px;line-height:1.6;min-height:32px;padding:8px 2px;color:var(--green)}.status.error{color:#9f4c43}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin:3px 0 20px}.metric{padding:19px 21px;border-radius:12px;background:#e6eee8;border:1px solid #d5e0d5}.metric:nth-child(2){background:#eeeee3}.metric:nth-child(3){background:#f4e9e2}.metric:nth-child(4){background:#e7eaf1}.metric .label{font-size:12px;color:#697c74}.metric .number{font-size:29px;font-weight:600;margin:7px 0}.metric .sub{font-size:11px;color:#77847a;line-height:1.5}.workspace{display:grid;grid-template-columns:300px minmax(0,1fr);gap:20px;align-items:start}.editor{position:sticky;top:16px;max-height:calc(100vh - 35px);overflow:auto;padding:18px}.analysis-column{min-width:0;display:flex;flex-direction:column;gap:20px}.section-title{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:14px}.section-title .eyebrow{margin-bottom:7px}.section-title select{font-size:12px;max-width:50%}.muted{color:var(--muted)}.small{font-size:11px;line-height:1.6}.scene-list{display:flex;flex-direction:column;gap:5px;margin:15px 0}.scene-btn{display:flex;align-items:center;gap:10px;text-align:left;border:1px solid transparent;padding:9px 8px;background:transparent;border-radius:8px}.scene-btn .seq{font-size:11px;color:#84928b;border:1px solid #d9e0d6;min-width:25px;height:25px;display:grid;place-items:center;border-radius:6px}.scene-btn .name{flex:1;font-size:12px}.scene-btn .seconds{font-size:10px;color:var(--muted)}.scene-btn.active{background:#e8efe8;border-color:#b8cabc}.scene-btn.active .seq{background:var(--green);color:white;border-color:var(--green)}.field{display:grid;grid-template-columns:minmax(0,1fr) 74px;gap:8px;align-items:center;font-size:11px;margin:7px 0}.field input{width:74px;padding:6px 7px;text-align:right}.wide-field{display:block;font-size:11px;margin:9px 0}.wide-field input,.wide-field textarea{display:block;width:100%;margin-top:5px;font-size:12px}.wide-field textarea{min-height:68px}.scene-actions{display:flex;gap:6px;justify-content:flex-end;margin:10px 0}.scene-actions button{font-size:11px;padding:5px 8px}details{border-top:1px solid var(--line);margin-top:13px;padding-top:12px}summary{cursor:pointer;font-size:12px;color:#4b665b;line-height:1.6}details p{font-size:12px;line-height:1.8;color:var(--muted);margin:8px 0}.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11px;margin-bottom:10px}.legend i{display:inline-block;width:16px;height:3px;vertical-align:middle;margin-right:5px}.chart{width:100%;overflow:hidden}.chart svg{width:100%;height:240px;display:block}.chart text{font-family:inherit;fill:#839089;font-size:10px}.chart .axis{stroke:#dfe6db;stroke-width:1}.matrix-scroll{overflow:auto;max-height:440px;margin-top:15px;border:1px solid var(--line);border-radius:8px}.matrix{border-collapse:separate;border-spacing:3px;width:100%;font-size:10px}.matrix th{background:var(--paper);position:sticky;top:0;z-index:2;text-align:center;font-size:10px;font-weight:400;padding:7px 5px;max-width:95px;min-width:58px;cursor:pointer}.matrix th:first-child{left:0;z-index:4;min-width:134px;text-align:left}.matrix td:first-child{position:sticky;left:0;z-index:1;background:var(--paper);white-space:nowrap;font-size:11px;padding:4px 8px;min-width:134px}.matrix td.heat{text-align:center;border-radius:3px;height:23px;min-width:58px;color:#34584f;cursor:pointer}.matrix .group-row td{font-size:9px;color:var(--muted);letter-spacing:1px;padding:7px;background:#f0f3ed}.matrix .chosen{box-shadow:inset 0 0 0 1px #52786b}.badge{background:#edf1ea;padding:5px 9px;font-size:10px;border-radius:20px;white-space:nowrap}.summary-text{font-size:13px;line-height:1.9;padding:12px 15px;background:#f0f3ec;border-radius:9px;margin:5px 0 20px}.summary-text p+p{margin-top:5px}.emotion-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 23px}.emotion-head{font-size:11px;display:flex;justify-content:space-between;gap:5px;margin-bottom:6px}.bar-track{height:6px;background:#e9ece6;border-radius:5px;position:relative;overflow:hidden}.bar-fill{position:absolute;inset:0 auto 0 0;border-radius:5px}.bar-range{position:absolute;top:0;height:100%;opacity:.3}.table-scroll{overflow:auto;max-height:400px}.data-table{width:100%;font-size:11px;border-collapse:collapse;line-height:1.7;margin-top:10px}.data-table th{text-align:left;font-weight:500;color:var(--muted);background:#f3f5ef;position:sticky;top:0}.data-table th,.data-table td{padding:7px 10px;border-bottom:1px solid #e8ece3;vertical-align:top}.data-table td.num{font-variant-numeric:tabular-nums}.stage-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.stage-card{border:1px solid var(--line);border-radius:10px;padding:14px;cursor:pointer;background:#fcfdf8}.stage-card.active{border-color:#81a08b;background:#f1f5ee}.stage-card .time{font-size:10px;color:var(--muted);margin-bottom:6px}.stage-card h3{margin:0 0 8px;font-size:13px}.stage-card p{font-size:11px;line-height:1.8;color:#778078}.chip{display:inline-block;padding:3px 7px;background:#e8ede3;border-radius:5px;font-size:10px;margin-right:4px;margin-bottom:5px}.settings{margin-top:22px}.settings-grid{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:35px}.settings-grid .field{font-size:12px}.settings textarea{font-family:Consolas,monospace;font-size:11px;min-height:160px;margin:10px 0}.settings select{width:100%;margin-top:12px}.provenance{margin-top:20px;padding:8px 20px 18px}.provenance details{border:0}footer{display:flex;justify-content:space-between;gap:15px;margin:24px 0 10px;color:var(--muted);font-size:10px}.no-data{color:#84908a;padding:20px;font-size:12px}.error-box{border:1px solid #e6c8bc;background:#faf0e9;border-radius:8px;padding:15px;font-size:12px;line-height:1.8}.delta{font-size:10px;color:#627b6d}.outcome-editor{font-family:Consolas,monospace;min-height:140px;font-size:10px}.hint{color:#b1805b;font-size:10px;line-height:1.5;margin-top:7px}
+@media(max-width:1100px){.workspace{grid-template-columns:260px minmax(0,1fr)}.controlbar{grid-template-columns:1fr 1fr}.controlbar button{align-self:end}.hero{gap:20px;grid-template-columns:1.2fr 1fr}.emotion-grid{grid-template-columns:repeat(2,1fr)}.settings-grid{gap:20px}.topbar{gap:10px}.version{display:none}}
+@media(max-width:760px){main{padding:22px 4%}.topbar{padding:14px 4%;flex-wrap:wrap}.toolbar{width:100%;margin:0;gap:6px}.toolbar button{font-size:11px;padding:7px}.hero{grid-template-columns:1fr;gap:15px;margin:0 0 20px}.hero h1{font-size:25px}.method-note{padding:12px}.metrics{grid-template-columns:repeat(2,1fr);gap:10px}.metric{padding:13px}.metric .number{font-size:24px}.workspace{grid-template-columns:1fr}.editor{position:static;max-height:none}.scene-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.scene-btn{min-width:0}.scene-btn .name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.scene-btn .seconds{display:none}.settings-grid{grid-template-columns:1fr}.stage-cards{grid-template-columns:1fr}.panel{padding:17px}.section-title{align-items:start}.section-title select{max-width:48%;font-size:10px}.emotion-grid{gap:12px 15px}.chart svg{height:210px}.brand strong{font-size:16px}.matrix th{min-width:55px}footer{flex-direction:column}.controlbar{padding:14px;gap:10px}.controlbar label{min-width:0}}
+</style></head><body>
+<header class="topbar"><div class="brand"><span class="brand-mark">AP</span><div><strong>观众心景</strong><span>认知与情绪轨迹工作台</span></div></div><span class="version">本地原型 · 0.1</span><div class="toolbar"><button id="newWork">新作品</button><button id="importWork">导入作品</button><button id="exportWork">保存作品</button><button id="exportResult">导出计算</button><button id="exportCSV">CSV</button></div><input type="file" id="fileInput" accept=".json,application/json" hidden></header>
+<main>
+<section class="hero"><div><p class="eyebrow">A STORY, THROUGH THE VIEWER’S MIND</p><h1>从认知变化，看见情绪如何发生。</h1><p>同时追踪每一种感受，保留温暖与遗憾、好奇与紧张的共存。</p></div><div class="method-note"><span class="dot"></span><strong>可计算的假设，等待真实观众校准</strong><p>线索由人标注；强度不是概率。参数、感受组合与每项来源都可以查看和修改。</p></div></section>
+<section class="controlbar panel"><label>作品<input id="workTitle" aria-label="作品名称"></label><label>示例版本<select id="exampleSelect"></select></label><label>对照版本<select id="compareSelect"></select></label><label>艺术目标<select id="styleSelect"></select></label><button id="restoreSample">载入示例</button></section>
+<div id="status" class="status" role="status" aria-live="polite"></div>
+<section class="metrics" id="metrics"></section>
+<section class="workspace">
+<aside class="panel editor"><div class="section-title"><div><p class="eyebrow">STORY INPUT</p><h2>阶段与线索</h2></div><button id="addScene" aria-label="新增阶段">＋</button></div><p class="muted small">点选阶段，修改观众此刻可见的线索。空白代表未知。</p><div id="sceneList" class="scene-list"></div><div id="sceneEditor"></div></aside>
+<div class="analysis-column">
+<section class="panel chart-panel"><div class="section-title"><div><p class="eyebrow">CONTINUOUS EXPERIENCE</p><h2>认知轨迹与版本对照</h2></div><select id="chartMode" aria-label="轨迹类型"><option value="cognition">惊 · 违和 · 未闭合 · 期待 · 压力</option><option value="emotion">温暖 · 悲伤 · 感动 · 释然 · 安宁</option><option value="attention">注意 · 疲劳 · 内源维持 · 新鲜 · 无聊</option></select></div><div id="chartLegend" class="legend"></div><div id="chart" class="chart"></div><div id="chartNote" class="muted small"></div></section>
+<section class="panel"><div class="section-title"><div><p class="eyebrow">COGNITIVE FIELD</p><h2>全部感受，同屏比较</h2></div><select id="matrixGroup" aria-label="感受分组"><option value="all">全部状态</option><option>核心感受</option><option>时空感受</option><option>价值评价</option><option>运行状态</option><option>信号</option></select></div><p class="muted small">每格为该阶段平均强度；点列选择阶段。悬停查看定义与数值。— 表示缺少依据。</p><div id="matrix" class="matrix-scroll"></div></section>
+<section class="panel detail-panel"><div class="section-title"><div><p class="eyebrow">THIS MOMENT</p><h2 id="detailTitle">阶段解释</h2></div><span id="detailTime" class="badge"></span></div><div id="stageSummary"></div><div id="emotionBars" class="emotion-grid"></div><details><summary>查看各认知感受的均值、峰值与结束状态</summary><div id="stateTable" class="table-scroll"></div></details><details><summary>查看正负信号的来源与一次事件</summary><div id="sourceTable" class="table-scroll"></div></details><details><summary>查看情绪组合依据与缺测范围</summary><div id="combinationTable" class="table-scroll"></div></details></section>
+<section class="panel"><div class="section-title"><div><p class="eyebrow">BEAT BY BEAT</p><h2>每个阶段，可能怎样感受</h2></div><button id="reportToggle">查看评分明细</button></div><div id="stageCards" class="stage-cards"></div><div id="scoreDetails" hidden></div></section>
+</div></section>
+<section class="panel settings"><div class="section-title"><div><p class="eyebrow">MAKE THE MODEL YOURS</p><h2>观众、时间尺度与组合公式</h2></div><span class="badge">配置随作品一起保存</span></div><div class="settings-grid"><div><h3>目标观众</h3><div id="profileEditor"></div></div><div><h3>关键参数</h3><div id="parameterEditor"></div></div><div><h3>情绪的组合依据</h3><p class="muted small">允许多种情绪同时出现。可修改权重和受限表达式；不会执行导入的代码。</p><select id="emotionSelect" aria-label="选择情绪公式"></select><textarea id="emotionFormula" spellcheck="false" aria-label="情绪公式 JSON"></textarea><button id="applyEmotion">应用组合公式</button><details><summary>完整参数 JSON</summary><textarea id="allParameters" spellcheck="false" aria-label="完整参数 JSON"></textarea><button id="applyParameters">应用全部参数</button></details></div></div></section>
+<section class="panel provenance"><details><summary>初版覆盖范围、公式依据与已知限制</summary><p>认知感受覆盖来自本次已读 AP Bottom、理论核心及公式草案：惊、违和、合理/正确、把握、期待、压力、未闭合、新鲜、重复、繁简、目标进展、时间空间等。目录可扩展；没有声称已经枚举所有历史版本。</p><p>关系、回忆、损失等是评价与来源；疲劳、习惯、注意是运行状态；情绪是可配置组合的慢状态，三者分组呈现。不会用一个净正负值替代所有感受。</p><p>作品阶段输入为人工标注，不含自动看片、完整 B/C 召回、真实观众数据或生理递质测量。评分为固定目标和权重下的演示指数；预测可信度尚未校准。漏掉某项依据时保留缺测与范围，不把“没有标注”误作“没有感觉”。</p><p>原始版本和补充：FORMULA-SPEC v0.2 + FORMULA-ADDENDUM v0.2.1。单一过程的多标签不重复记量，逐结果分正负；不按故事名返回情绪，也不规定必笑或必哭。</p><div id="annotationNote"></div><div id="warnings"></div></details></section>
+<footer><span>AP 观众心景 · 本地计算，不发送作品</span><span id="saveState">草稿保存在当前浏览器</span></footer>
+</main><script>(function(root, factory) {
+  const api = factory();
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  else root.APCatalog = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this, function() {
+  'use strict';
+  const input = (id, label, group, help, max = 1) => ({id, label, group, help, min: 0, max, step: max === 1 ? .05 : 1});
+  const inputs = [
+    input('actualNovel', '意外特征·实际强度', '预测与解释', '同一新特征的实能量 R；与其预测比较，不能与另一对象相减。'),
+    input('predictedNovel', '意外特征·预测强度', '预测与解释', '该特征呈现前的虚能量 V；已提前揭晓时通常较高。'),
+    input('actualExpected', '预期特征·实际强度', '预测与解释', '到期应出现的特征实能量；未到期不标为落空。'),
+    input('predictedExpected', '预期特征·预测强度', '预测与解释', '对同一到期特征的预测。两个特征允许惊和违和同时出现。'),
+    input('explanation', '解释支持', '预测与解释', '当前线索对解释的支持；是主观估计，不是事实真值。'),
+    input('evidence', '可见依据充分度', '预测与解释', '观众实际能读到的依据，而非导演已知的全部剧情。'),
+    input('resolution', '解释推进依据', '预测与解释', '本拍确有解释/解除疑问的程度；自然遗忘不冒充理解。'),
+    input('question', '新待解问题', '预测与解释', '观众自己的求证目标；不能直接复制角色任务。'),
+    input('load', '加工负荷', '预测与解释', '并行对象、线索和关系需要的加工资源。'),
+    input('detail', '新内容发展', '预测与解释', '这段提供的新细节或可继续展开的内容。'),
+    input('continuity', '思路延续支持', '预测与解释', '上一阶段的注意对象与本阶段的关系支持。'),
+    input('relevance', '当前目标相关性', '预测与解释', '这段内容与观众正在关心的问题的关系。'),
+    input('progress', '目标进展', '预测与解释', '观众理解/关切目标的进展状态，不等同角色完成度。'),
+    input('care', '照顾与关系证据', '关系与价值', '由具体行为建立的关系价值线索，不直接输入“感动”。'),
+    input('memory', '回忆唤起', '关系与价值', '当前内容唤起观众已有经历的估计。'),
+    input('loss', '已发生损失', '关系与价值', '已失去的对象/机会的显著性；未来风险写入结果账。'),
+    input('threat', '威胁解释', '关系与价值', '有具体受损对象的威胁解释，不能用惊代填。'),
+    input('safety', '安全与可承受', '关系与价值', '环境安全、虚构距离或可承受解释的支持。'),
+    input('selfRelevance', '自我关联', '关系与价值', '与观众自身关系、目标或经历的连接。'),
+    input('unfairness', '不公评价', '关系与价值', '对不当待遇/规则的评价，是愤怒等组合的来源之一。'),
+    input('selfResponsibility', '自身责任评价', '关系与价值', '观众所代入主体对坏结果的责任；无依据留空。'),
+    input('pleasant', '感官舒适', '形式与身体', '声音、色彩、动作等在该观众上的直接正向价值。'),
+    input('sensoryCost', '强刺激代价', '形式与身体', '刺耳、眩晕或过载等；与纯意外分开。'),
+    input('craft', '形式与技艺线索', '形式与身体', '观众能识别的构图、韵律、表达技巧。'),
+    input('playfulness', '玩笑/游戏解释', '形式与身体', '能将不寻常内容理解为玩笑的关系与情境支持。'),
+    input('scale', '宏大/超常尺度', '形式与身体', '用于崇高/震撼组合的尺度评价。'),
+    input('expectedInterval', '预期间隔（秒）', '时间与空间', '从之前的间隔范式得到的预期；无节奏事件留空。', 3600),
+    input('actualInterval', '实际间隔（秒）', '时间与空间', '此次对应事件实际间隔。', 3600),
+    input('order', '时间顺序可理解度', '时间与空间', '观众能否把先后、回忆和当前事件正确区分。'),
+    input('spatial', '空间关系可理解度', '时间与空间', '物体/角色空间锚点是否可兼容，不把切镜头本身算错。'),
+    input('distance', '空间相对距离', '时间与空间', '相对空间尺度上的距离；用于聚焦可达性，非情感亲疏。', 100)
+  ];
+  const defs = [
+    ['surprise','惊','核心感受','实际新特征超出同特征预测的正残差。','AP Bottom 719–725'],
+    ['dissonance','违和','核心感受','到期预期特征未兑现的残差；不同对象分开。','AP Bottom 723–725'],
+    ['reasonable','合理感','核心感受','带依据的解释支持的持续状态。','公式 v0.2 §3'],
+    ['correct','正确事件','核心感受','有解释依据时违和的下降；不等于所有快乐。','理论核心 523；版本差异保留'],
+    ['insight','理解推进','核心感受','解释支持比上一状态增加；不强求先困惑。','公式 v0.2 §3'],
+    ['match','预测吻合','核心感受','同对象预期/实际接近并有证据。','AP Bottom 733；与正确事件分开'],
+    ['grasp','把握感','核心感受','解释、证据和低残差共同支持的主观把握。','AP Bottom 737；理论核心 535'],
+    ['uncertainty','不确定','核心感受','对当前解释/预测缺少把握的状态。','咨询读出；不是全部统计熵'],
+    ['expectation','期待','核心感受','尚开放的奖励预测与可避免惩罚。','理论核心 525；用户四方向纠正'],
+    ['pressure','压力','核心感受','尚开放的惩罚预测与奖励损失风险。','理论核心 526；用户四方向纠正'],
+    ['unresolved','未闭合','核心感受','观众待解问题在内源注意中保持。','公式 v0.2 §5'],
+    ['closure','闭合/慰藉事件','核心感受','有依据解除求证张力，不删除损失。','公式 v0.2 §5'],
+    ['novelty','新鲜感','核心感受','陌生程度、新细节和可理解性共同影响。','理论核心 532；公式 v0.2 §7'],
+    ['repetition','重复感','核心感受','对近期累积使用疲劳的读出。','理论核心 533'],
+    ['complexity','繁','核心感受','当前加工负荷及待解问题的组合。','理论核心 534'],
+    ['simplicity','简','核心感受','低负荷、可组织的图景，不等于更美。','理论核心 534'],
+    ['progress','进展感','核心感受','对观众关切目标推进的估计。','理论核心 536，可选'],
+    ['goalDistance','目标距离感','核心感受','当前目标尚需推进的程度。','理论核心 536，可选'],
+    ['boredom','无聊感','核心感受','重复且缺少发展与关系价值时的低收益负荷。','理论核心 519/533；咨询参数化'],
+    ['waiting','等待感','时空感受','待解内容仍存在时，主观等待随时长积累。','公式 v0.2 §5/9'],
+    ['timeOrder','先后顺序感','时空感受','本段对时序归属的可理解度。','图景 73；人工线索输入'],
+    ['timeMatch','时间预期吻合','时空感受','实际间隔与预期间隔的距离核。','公式 v0.2 §9'],
+    ['spaceCoherence','空间相容','时空感受','场景关系与空间锚点的相容支持。','公式 v0.2 §6'],
+    ['spaceProximity','空间接近','时空感受','相对距离核；不直接当温暖或价值。','公式 v0.2 §6'],
+    ['care','关系/关怀评价','价值评价','已注意到的照顾证据 × 观众关系敏感度。','公式 v0.2 §8'],
+    ['memory','回忆唤起','价值评价','当前内容引发的个人记忆活动。','图景 40；公式 v0.2 §7'],
+    ['loss','损失评价','价值评价','当前损失线索；与未来失望分账。','公式 v0.2 §4/5'],
+    ['threat','威胁评价','价值评价','有受损对象的威胁解释。','公式 v0.2 §8'],
+    ['safety','安全感依据','价值评价','可承受与安全的支持。','审美咨询评价项'],
+    ['selfRelevance','自我关联','价值评价','个人目标/关系/经历的相关性。','公式 v0.2 §8'],
+    ['unfairness','不公评价','价值评价','供愤怒组合使用的具体评价。','可配置审美扩展'],
+    ['selfResponsibility','自身责任','价值评价','供内疚组合使用的具体评价。','可配置审美扩展'],
+    ['pleasant','感官舒适','价值评价','直接正向感官价值。','公式 v0.2 §8'],
+    ['sensoryCost','刺激负担','价值评价','直接负向感官价值。','公式 v0.2 §8'],
+    ['craft','形式欣赏依据','价值评价','已理解的形式、技艺价值。','公式 v0.2 §8/10'],
+    ['playfulness','玩笑解释','价值评价','幽默组合的情境支持。','可配置审美扩展'],
+    ['scale','宏大尺度','价值评价','震撼/敬畏组合的评价依据。','可配置审美扩展'],
+    ['relief','缓解','价值评价','预期惩罚减少与求证解除的可追溯贡献。','公式 v0.2 §4/5'],
+    ['disappointment','失落','价值评价','逐结果奖励预期降低；兑现删除不误罚。','公式补充 v0.2.1 §1'],
+    ['attention','注意份额','运行状态','当前对象与背景竞争后的有限份额。','公式 v0.2 §6'],
+    ['internal','内源维持','运行状态','上一注意与真实内容发展延续到下一时刻。','公式 v0.2 §6'],
+    ['fatigue','短期疲劳','运行状态','按真实时间累积/恢复，不抹去长期习惯。','公式 v0.2 §6'],
+    ['familiarity','熟悉度','运行状态','已辨认的接触痕迹，与短期疲劳不同。','公式 v0.2 §7'],
+    ['habit','习惯基础','运行状态','持续实际关注形成的慢基础倾向。','公式 v0.2 §7'],
+    ['arousal','唤醒估计','运行状态','惊、压力和刺激负担的非生化读出。','公式 v0.2 §8'],
+    ['positive','正向信号率','信号','持续与事件的全段平均；来源可展开。','公式 v0.2 §8'],
+    ['negative','负向信号率','信号','独立于正向保留，不以净值代替。','公式 v0.2 §8']
+  ].map(([id,label,group,help,source])=>({id,label,group,help,source}));
+  // Declarative, restricted expressions. No executable strings or keyword routes.
+  const ref = x => ({ref:x});
+  const mul = (...x) => ({op:'mul',args:x.map(v=>typeof v==='string'?ref(v):v)});
+  const inv = x => ({op:'inv',args:[ref(x)]});
+  const term = (weight, expression) => ({weight, expression:typeof expression==='string'?ref(expression):expression});
+  const emotions = [
+    ['curiosity','好奇','#5281d8',[term(.9,mul('unresolved','novelty')),term(.45,mul('uncertainty',inv('pressure')))]],
+    ['delight','惊喜','#e9a241',[term(1.25,mul('surprise','insight','safety')),term(.6,mul('surprise','care'))]],
+    ['joy','愉悦','#d99a40',[term(.55,'pleasant'),term(.5,'insight'),term(.35,'craft'),term(.25,'expectation')]],
+    ['tension','紧张','#d27e64',[term(.85,'pressure'),term(.35,mul('waiting','unresolved')),term(.2,mul('surprise','threat'))]],
+    ['fear','担忧/害怕','#ac7186',[term(1.4,mul('pressure','threat')),term(.35,mul('threat',inv('safety')))]],
+    ['frustration','挫败/烦躁','#b37750',[term(.55,mul('dissonance','complexity')),term(.6,mul('boredom','unresolved')),term(.55,'sensoryCost')]],
+    ['sadness','悲伤/不舍','#7588ad',[term(.8,'loss'),term(.6,'disappointment'),term(.35,mul('memory','loss'))]],
+    ['warmth','温暖/亲近','#da8f83',[term(.8,'care'),term(.35,mul('memory','care')),term(.2,mul('safety','selfRelevance'))]],
+    ['moved','感动','#9d79ad',[term(.75,mul('care','selfRelevance')),term(.65,mul('care','loss')),term(.4,mul('insight','care'))]],
+    ['nostalgia','怀念','#a58b70',[term(.8,mul('memory','selfRelevance')),term(.3,mul('memory','loss'))]],
+    ['relieved','释然','#59a29b',[term(.9,'relief'),term(.4,mul('closure','safety'))]],
+    ['calm','轻松/安宁','#6ba291',[term(.7,mul('safety',inv('pressure'),inv('sensoryCost'))),term(.3,mul('reasonable','pleasant'))]],
+    ['bored','无聊/走神','#949aa6',[term(.9,'boredom'),term(.3,mul('repetition',inv('care')))]],
+    ['awe','震撼/敬畏','#7e86bb',[term(.8,mul('scale','surprise')),term(.55,mul('scale','craft'))]],
+    ['amused','好笑/会心','#c49442',[term(.9,mul('playfulness','insight','safety')),term(.55,mul('playfulness','surprise','reasonable'))]],
+    ['confused','困惑','#7f84a2',[term(.5,'dissonance'),term(.4,'uncertainty'),term(.25,mul('unresolved','complexity'))]],
+    ['angry','愤慨','#b97777',[term(.9,mul('unfairness','loss')),term(.7,mul('unfairness','pressure'))]],
+    ['guilt','内疚','#968194',[term(1.1,mul('selfResponsibility','loss')),term(.4,mul('selfResponsibility','disappointment'))]],
+    ['rhythmic','律动/跟随感','#6b9ea2',[term(.8,mul('timeMatch','pleasant')),term(.3,mul('timeMatch','expectation'))]]
+  ].map(([id,label,color,terms])=>({id,label,color,terms}));
+  const parameters = {
+    surpriseThreshold:.08, dissonanceThreshold:.08,
+    attentionTemperature:1, attentionPersistence:1.2, attentionSurprise:1.1,
+    attentionDissonance:.8, attentionQuestion:1.3, attentionValue:.5,
+    attentionContinuity:.6, attentionFatigue:1.5, backgroundPriority:.15,
+    gainMax:.8, gainHalf:.4, innerHalf:15, innerRate:.045,
+    questionHalf:45, questionRate:.015, fatigueHalf:80, fatigueRate:.025,
+    familiarityRate:.003, habitRate:.0003, feelingHalf:8, emotionHalf:18,
+    timeTolerance:.25, waitingScale:30, spaceScale:3,
+    signalRate:.03, insightGain:.6, correctionGain:.4, closureGain:.5,
+    valueChangeGain:.5, rewardRate:.012, penaltyRate:.016,
+    boredomGain:.025, outcomeScale:1, emotionGain:1
+  };
+  const parameterLabels={surpriseThreshold:'惊的残差阈值',dissonanceThreshold:'违和残差阈值',attentionTemperature:'注意竞争温度',fatigueHalf:'疲劳半衰期 / 秒',fatigueRate:'疲劳增长率 / 秒',emotionHalf:'情绪半衰期 / 秒',feelingHalf:'感受平滑半衰期 / 秒',questionHalf:'未闭合半衰期 / 秒',innerHalf:'内源维持半衰期 / 秒',gainMax:'注意最大附加增益',waitingScale:'等待感时间尺度 / 秒',timeTolerance:'时间相对容差',signalRate:'基础信号率',outcomeScale:'结果价值归一尺度',emotionGain:'组合情绪增益'};
+  const profile = {name:'初次观看 · 重视关系',relationship:1,memory:1,lossSensitivity:1,sensorySensitivity:1,initialFamiliarity:.12,initialHabit:.45,initialFatigue:0,initialExplanation:0};
+  const styles = {
+    bittersweet:{label:'温柔 · 苦甜',weights:{understanding:.18,relationship:.2,development:.15,comfort:.12,craft:.1,afterglow:.15,target:.1},target:{moved:[.3,.9],warmth:[.35,1],sadness:[.12,.8]}},
+    comedy:{label:'轻松 · 喜剧',weights:{understanding:.15,relationship:.1,development:.18,comfort:.15,craft:.1,afterglow:.1,target:.22},target:{amused:[.35,1],joy:[.3,1],tension:[0,.4]}},
+    suspense:{label:'悬念 · 释然',weights:{understanding:.18,relationship:.1,development:.2,comfort:.06,craft:.1,afterglow:.14,target:.22},target:{curiosity:[.25,.85],tension:[.25,.9],relieved:[.15,.9]}},
+    quiet:{label:'舒缓 · 余韵',weights:{understanding:.13,relationship:.15,development:.1,comfort:.2,craft:.15,afterglow:.17,target:.1},target:{calm:[.4,1],warmth:[.25,1],tension:[0,.3]}}
+  };
+  const scoreLabels={understanding:'线索理解',relationship:'关系价值建立',development:'内容发展',comfort:'刺激可承受',craft:'形式可读',afterglow:'末段余韵',target:'目标体验符合'};
+  return {version:'0.1.0',inputs,defs,emotions,parameters,parameterLabels,profile,styles,scoreLabels};
+});
+</script><script>(function(root, factory) {
+  const cat = typeof module === 'object' && module.exports ? require('./catalog.js') : root.APCatalog;
+  const api = factory(cat);
+  if (typeof module === 'object' && module.exports) module.exports = api; else root.APEngine = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this, function(C) {
+  'use strict';
+  const finite = x => typeof x === 'number' && Number.isFinite(x);
+  const clip = x => Math.max(0, Math.min(1, x));
+  const pos = x => Math.max(0,x);
+  const clone = x => JSON.parse(JSON.stringify(x));
+  const safeKeys = x => Object.keys(x).every(k=>!['__proto__','constructor','prototype'].includes(k));
+  const avg = xs => xs.length && xs.every(finite) ? xs.reduce((a,b)=>a+b,0)/xs.length : null;
+  const calc = (args,fn) => args.every(finite) ? fn(...args) : null;
+  const smooth = (old,target,dt,half) => target===null ? null : (old===null?target:old*Math.pow(2,-dt/half)+target*(1-Math.pow(2,-dt/half)));
+  function decayRate(old,rate,dt,half) {
+    const lam=Math.LN2/half,d=Math.exp(-lam*dt); return old*d+rate*(1-d)/lam;
+  }
+  function expression(node,state) {
+    if(finite(node)) return node;
+    if(!node || typeof node!=='object') throw new Error('组合项必须是有限数字、ref 或允许的运算');
+    if(typeof node.ref==='string') {
+      if(!C.defs.some(d=>d.id===node.ref)) throw new Error('未知感受引用：'+node.ref);
+      return state[node.ref] ?? null;
+    }
+    const args=(node.args||[]).map(n=>expression(n,state));
+    if(!args.length || args.some(v=>v===null)) return null;
+    switch(node.op){
+      case 'mul': return args.reduce((a,b)=>a*b,1);
+      case 'mean':return avg(args);
+      case 'min':return Math.min(...args);
+      case 'max':return Math.max(...args);
+      case 'inv':if(args.length!==1)throw new Error('inv 只接受一项');return 1-clip(args[0]);
+      default:throw new Error('不支持的组合运算：'+node.op);
+    }
+  }
+  function refs(node,out=[]) {
+    if(node&&typeof node==='object') {if(node.ref)out.push(node.ref);(node.args||[]).forEach(n=>refs(n,out));}
+    return [...new Set(out)];
+  }
+  function validate(doc) {
+    if(!doc||doc.schema!=='ap-aesthetics/1') throw new Error('作品格式须为 ap-aesthetics/1');
+    if(!safeKeys(doc)) throw new Error('不允许特殊对象键');
+    if(!Array.isArray(doc.scenes)||!doc.scenes.length||doc.scenes.length>300) throw new Error('作品需要 1–300 个阶段');
+    const sceneIds=new Set();let time=0;
+    for(const s of doc.scenes){
+      if(typeof s.id!=='string'||!s.id||sceneIds.has(s.id)) throw new Error('阶段 ID 必须非空且唯一');sceneIds.add(s.id);
+      if(!finite(s.duration)||s.duration<.1||s.duration>3600)throw new Error(s.id+'：时长须为 0.1–3600 秒');time+=s.duration;
+      if(typeof s.object!=='string'||!s.object.trim())throw new Error(s.id+'：需要稳定的注意对象标识');
+      if(!s.cues||!safeKeys(s.cues))throw new Error(s.id+'：线索对象无效');
+      for(const f of C.inputs){const v=s.cues[f.id];if(v!=null&&(!finite(v)||v<f.min||v>f.max))throw new Error(s.id+'：'+f.label+' 超出范围');}
+      if(s.outcomes!=null&&!Array.isArray(s.outcomes))throw new Error('结果账必须是数组');
+      if(s.processes!=null&&!Array.isArray(s.processes))throw new Error('过程账必须是数组');
+      const outcomeIds=new Set();
+      for(const o of s.outcomes||[]){
+        if(!o.id||outcomeIds.has(o.id))throw new Error(s.id+'：结果身份重复/缺失');outcomeIds.add(o.id);
+        if(!['pending','realized','ruled_out','unknown'].includes(o.status))throw new Error('未知结果状态');
+        if(o.status==='pending'&&(!finite(o.p)||o.p<0||o.p>1||!finite(o.reward)||o.reward<0||!finite(o.penalty)||o.penalty<0))throw new Error('开放结果需要合法 p / reward / penalty');
+        if(['realized','ruled_out'].includes(o.status)&&(!finite(o.actualPositive)||o.actualPositive<0||!finite(o.actualNegative)||o.actualNegative<0))throw new Error('已确认结果需要实际正负值（未观察不能填零）');
+        for(const key of ['baselineGood','baselineBad','reliefOpportunity','rewardAtRisk'])if(o[key]!=null&&(!finite(o[key])||o[key]<0))throw new Error('结果基线/机会/风险必须是非负数');
+      }
+      const rateIds=new Set();
+      for(const p of s.processes||[]){
+        if(!p.id||!['event','rate'].includes(p.kind)||!finite(p.positive)||!finite(p.negative)||p.positive<0||p.negative<0)throw new Error('自定义过程需要身份、kind、非负正负量');
+        if(!p.evidence)throw new Error('自定义过程需要来源说明');
+        if(p.kind==='rate'&&rateIds.has(p.id))throw new Error('同一阶段持续过程重复：'+p.id);if(p.kind==='rate')rateIds.add(p.id);
+      }
+    }
+    if(time>14400)throw new Error('初版单次交互计算支持总时长不超过 4 小时');
+    const p={...C.parameters,...(doc.parameters||{})};
+    for(const [key,value] of Object.entries(p))if(!Object.hasOwn(C.parameters,key)||!finite(value)||value<0||value>10000)throw new Error('参数无效：'+key);
+    for(const key of ['attentionTemperature','gainHalf','innerHalf','questionHalf','fatigueHalf','feelingHalf','emotionHalf','timeTolerance','waitingScale','spaceScale','outcomeScale'])if(p[key]<=0)throw new Error(key+' 必须大于零');
+    const profile={...C.profile,...(doc.profile||{})};
+    for(const [key,value] of Object.entries(profile)){if(key==='name')continue;if(!Object.hasOwn(C.profile,key)||!finite(value)||value<0||value>3)throw new Error('观众参数无效：'+key);}
+    for(const key of ['initialFamiliarity','initialHabit','initialExplanation'])if(profile[key]>1)throw new Error(key+' 应在 0–1 内');
+    const em=doc.emotionModel||C.emotions;
+    if(!Array.isArray(em)||!em.length||em.length>60)throw new Error('组合情绪需要 1–60 个定义');
+    const emotionIds=new Set();
+    for(const e of em){
+      if(!/^[a-zA-Z][a-zA-Z0-9_]*$/.test(e.id)||emotionIds.has(e.id)||!Array.isArray(e.terms)||!e.terms.length)throw new Error('情绪定义身份/项无效');emotionIds.add(e.id);
+      for(const t of e.terms){if(!finite(t.weight)||t.weight<0||t.weight>10)throw new Error('组合权重须在 0–10');expression(t.expression,Object.fromEntries(C.defs.map(d=>[d.id,.5])));}
+      if(e.terms.every(t=>t.weight===0))throw new Error('组合权重不能全部为零');
+    }
+    if(!Object.hasOwn(C.styles,doc.style||'bittersweet'))throw new Error('未知评分目标');
+    return {parameters:p,profile,emotions:clone(em)};
+  }
+  function phaseNarrative(row,emotionDefs){
+    const known=emotionDefs.map(d=>({id:d.id,label:d.label,...row.emotions[d.id]})).filter(e=>e.value!==null).sort((a,b)=>b.value-a.value);
+    const top=known.slice(0,3);
+    const lines=[];
+    if(top.length)lines.push('估计较突出的组合是 '+top.map(e=>e.label+' '+Math.round(e.value*100)).join('、')+'（0–100 强度）。');
+    if(row.cfs.closure>0&&row.cfs.loss>0)lines.push('求证张力得到部分解除，同时损失评价仍在；慰藉和难过可以并存。');
+    if(row.cfs.surprise>0&&row.cfs.pressure===0)lines.push('意外提高了注意，结果账未提供惩罚预测，因此没有仅凭惊生成压力。');
+    if(row.cfs.unresolved>.25)lines.push('待解问题继续进入下一阶段；本段结束不等于心理目标已关闭。');
+    if(row.cfs.boredom>.2)lines.push('重复与等待的收益下降，可能削弱继续关注；可比较增加新细节或改变时长的版本。');
+    const supports=top.flatMap(e=>e.terms.filter(t=>t.value!==null&&t.contribution>0).map(t=>({emotion:e.label,...t}))).sort((a,b)=>b.contribution-a.contribution).slice(0,3);
+    if(supports.length)lines.push('主要依据：'+supports.map(s=>s.emotion+' ← '+s.refs.map(k=>C.defs.find(d=>d.id===k)?.label||k).join(' × ')).join('；')+'。');
+    const unknown=emotionDefs.filter(d=>row.emotions[d.id].value===null).length;
+    if(unknown)lines.push(unknown+' 类组合有输入缺口，保留区间而不补成零。');
+    return {top:top.map(e=>({id:e.id,label:e.label,value:e.value})),lines};
+  }
+  function evaluate(doc){
+    const {parameters:p,profile,emotions:emotionDefs}=validate(doc);
+    const objects=new Map(),ledger=new Map(),processSeen=new Map(),rows=[],trace=[],warnings=[];
+    const emotionBank=new Map();
+    let elapsed=0;const docSubject=doc.subject||'target-viewer';
+    for(const scene of doc.scenes){
+      const x=Object.fromEntries(C.inputs.map(f=>[f.id,scene.cues[f.id]??null]));
+      const subject=scene.subject||docSubject,world=scene.world||'fiction',level=scene.level||'viewer-experience';
+      const scope=JSON.stringify([subject,world,level]);
+      if(!emotionBank.has(scope))emotionBank.set(scope,{lastTime:elapsed,state:Object.fromEntries(emotionDefs.map(d=>[d.id,{low:0,high:0}]))});
+      const emotionRecord=emotionBank.get(scope),emotionState=emotionRecord.state;
+      const emotionGap=elapsed-emotionRecord.lastTime;
+      if(emotionGap>0)for(const e of emotionDefs){emotionState[e.id].low*=Math.pow(2,-emotionGap/p.emotionHalf);emotionState[e.id].high*=Math.pow(2,-emotionGap/p.emotionHalf);}
+      const objectKey=JSON.stringify([subject,world,level,scene.object]);
+      let s=objects.get(objectKey);
+      if(!s){s={F:profile.initialFatigue,M:profile.initialFamiliarity,H:profile.initialHabit,I:0,A:.35,U:0,K:profile.initialExplanation,D:0,E:0,T:0,wait:0,lastTime:elapsed,scope};objects.set(objectKey,s);}
+      const gap=elapsed-s.lastTime;
+      if(gap>0){s.F*=Math.pow(2,-gap/p.fatigueHalf);s.I*=Math.pow(2,-gap/p.innerHalf);if(s.U!==null)s.U*=Math.pow(2,-gap/p.questionHalf);}
+      const S=calc([x.actualNovel,x.predictedNovel],(a,b)=>pos(a-b-p.surpriseThreshold));
+      const D=calc([x.actualExpected,x.predictedExpected],(a,b)=>pos(b-a-p.dissonanceThreshold));
+      const deltaK=calc([x.explanation,s.K,x.evidence],(k,prev,e)=>pos(k-prev)*e);
+      const corrected=calc([s.D,D,x.resolution],(prev,next,r)=>pos(prev-next)*r);
+      const release=calc([s.U,x.resolution],(u,r)=>u*r);
+      if(release!==null)s.U=pos(s.U-release);
+      if(x.question!==null&&s.U!==null)s.U=clip(s.U+x.question*(1-s.U));
+      if(x.question===null||x.resolution===null)s.U=null;
+      const stageEvents=[];const changes={positive:0,negative:0,relief:0,disappointment:0,known:scene.outcomesKnown===true};
+      const scopeKey=o=>JSON.stringify([subject,world,level,o.id]);
+      for(const o of scene.outcomes||[]){
+        const key=scopeKey(o),old=ledger.get(key);
+        if(old?.settled){warnings.push(scene.id+'：已结算结果 '+o.id+' 不重放；新的现实事件应有新结果身份。');continue;}
+        const beforeGood=old?.good??o.baselineGood??null,beforeBad=old?.bad??o.baselineBad??null;
+        if(o.status==='unknown'){changes.known=false;ledger.set(key,{...(old||{}),unknown:true,scope:[subject,world,level],id:o.id});continue;}
+        const settled=o.status!=='pending';
+        const good=settled?o.actualPositive:o.p*o.reward,bad=settled?o.actualNegative:o.p*o.penalty;
+        if(beforeGood!==null&&beforeBad!==null){
+          const dg=good-beforeGood,db=bad-beforeBad;
+          const positive=pos(dg)+pos(-db),negative=pos(-dg)+pos(db);
+          changes.positive+=positive;changes.negative+=negative;changes.relief+=pos(-db);changes.disappointment+=pos(-dg);
+          stageEvents.push({id:scene.id+':forecast:'+o.id,label:'结果评价变化 · '+(o.label||o.id),positive:p.valueChangeGain*positive,negative:p.valueChangeGain*negative,evidence:o.evidence||'阶段结果标注',family:'value',gain:1});
+        } else {changes.known=false;warnings.push(scene.id+'：'+o.id+' 缺比较基线，仅用于持续预期，不伪造变化事件。');}
+        if(settled)stageEvents.push({id:scene.id+':actual:'+o.id,label:'结果兑现 · '+(o.label||o.id),positive:o.actualPositive,negative:o.actualNegative,evidence:o.evidence||'阶段结果标注',family:'outcome',gain:1});
+        ledger.set(key,{id:o.id,scope:[subject,world,level],good,bad,reliefOpportunity:o.reliefOpportunity||0,rewardAtRisk:o.rewardAtRisk||0,settled,unknown:false});
+      }
+      const open=[...ledger.values()].filter(o=>o.scope.join('|')===[subject,world,level].join('|')&&!o.settled);
+      const futureKnown=scene.outcomesKnown===true&&!open.some(o=>o.unknown);
+      const targetE=futureKnown?clip(open.reduce((a,o)=>a+o.good+o.reliefOpportunity,0)/p.outcomeScale):null;
+      const targetT=futureKnown?clip(open.reduce((a,o)=>a+o.bad+o.rewardAtRisk,0)/p.outcomeScale):null;
+      const understanding=[deltaK,corrected,release].every(finite)?Math.max(p.insightGain*deltaK,p.correctionGain*corrected,p.closureGain*release):null;
+      if(understanding!==null)stageEvents.push({id:scene.id+':understanding',label:'解释 / 纠错 / 闭合共享贡献',positive:understanding,negative:0,family:'understanding',evidence:'同一过程取共享贡献，感受状态仍分别保留',gain:1});
+      const customRates=[];
+      for(const proc of scene.processes||[]){
+        const key=JSON.stringify([subject,world,level,proc.id]);
+        const canonical=JSON.stringify([proc.kind,proc.positive,proc.negative,proc.evidence]);
+        if(proc.kind==='event'&&processSeen.has(key)){
+          if(processSeen.get(key)!==canonical)throw new Error('同过程 ID 的内容冲突：'+proc.id);
+          warnings.push(scene.id+'：同一事件过程 '+proc.id+' 已计入，仅保留一份。');continue;
+        }
+        if(proc.kind==='event'){processSeen.set(key,canonical);stageEvents.push({...proc,label:proc.label||proc.id,gain:1,family:'custom'});}
+        else customRates.push(proc);
+      }
+      const sum={},peak={},last={},sourceSum=new Map(),emotionSum=Object.fromEntries(emotionDefs.map(d=>[d.id,{low:0,high:0,coverage:0}]));
+      let durationDone=0,positiveTotal=0,negativeTotal=0,attentionCoverage=1,lastTerms={};
+      const pushSource=(id,label,plus,minus,kind,evidence)=>{let r=sourceSum.get(id);if(!r){r={id,label,positive:0,negative:0,kind,evidence};sourceSum.set(id,r);}r.positive+=plus;r.negative+=minus;};
+      while(durationDone<scene.duration-1e-9){
+        const dt=Math.min(.5,scene.duration-durationDone),t=durationDone;
+        const v={};const pulse=Math.pow(2,-t/4);
+        v.surprise=S===null?null:S*pulse;v.dissonance=D;
+        s.K=smooth(s.K,x.explanation,dt,p.feelingHalf);
+        v.reasonable=s.K;v.correct=corrected===null?null:corrected*pulse;v.insight=deltaK===null?null:deltaK*pulse;
+        v.match=calc([x.actualExpected,x.predictedExpected,x.evidence],(r,pred,e)=>Math.exp(-Math.abs(r-pred))*e);
+        v.grasp=calc([s.K,x.evidence,D],(k,e,d)=>clip(.4*k+.4*e+.2*(1-d)));
+        v.uncertainty=v.grasp===null?null:1-v.grasp;
+        s.E=smooth(s.E,targetE,dt,p.feelingHalf);s.T=smooth(s.T,targetT,dt,p.feelingHalf);
+        v.expectation=s.E;v.pressure=s.T;
+        if(s.U!==null&&x.question!==null)s.U=clip(decayRate(s.U,p.questionRate*x.question*s.A,dt,p.questionHalf));
+        v.unresolved=s.U;v.closure=release===null?null:release*pulse;
+        v.familiarity=clip(s.M);v.habit=clip(s.H);v.fatigue=1-Math.exp(-s.F);v.repetition=v.fatigue;
+        v.novelty=calc([x.detail,x.evidence],(d,e)=>clip((1-s.M)*(.25+.75*d)*e));
+        v.complexity=calc([x.load,s.U],(l,u)=>clip(.8*l+.2*u));v.simplicity=v.complexity===null?null:1-v.complexity;
+        v.progress=x.progress;v.goalDistance=x.progress===null?null:1-x.progress;
+        for(const k of ['care','memory','loss','threat','safety','selfRelevance','unfairness','selfResponsibility','pleasant','sensoryCost','craft','playfulness','scale'])v[k]=x[k];
+        v.care=calc([v.care],a=>clip(a*profile.relationship));v.memory=calc([v.memory],a=>clip(a*profile.memory));v.loss=calc([v.loss],a=>clip(a*profile.lossSensitivity));v.sensoryCost=calc([v.sensoryCost],a=>clip(a*profile.sensorySensitivity));
+        v.boredom=calc([x.detail,v.care,v.memory],(d,c,m)=>clip(v.repetition*(1-d)*(1-.5*c-.3*m)));
+        if(s.U!==null)s.wait=s.U>.02?s.wait+dt*s.U:s.wait*Math.pow(2,-dt/10);
+        v.waiting=s.U===null?null:clip((1-Math.exp(-s.wait/p.waitingScale))*s.U);
+        v.timeOrder=x.order;v.spaceCoherence=x.spatial;
+        v.timeMatch=calc([x.expectedInterval,x.actualInterval],(e,a)=>Math.exp(-.5*((a-e)/Math.max(.01,e*p.timeTolerance))**2));
+        v.spaceProximity=calc([x.distance],d=>Math.exp(-.5*(d/p.spaceScale)**2));
+        v.relief=changes.known?clip(changes.relief*pulse+(v.closure??0)):null;
+        v.disappointment=changes.known?clip(changes.disappointment*pulse):null;
+        const terms=[[1,s.H>0?Math.log(.001+s.H):-6],[p.attentionPersistence,s.I],[p.attentionSurprise,v.surprise],[p.attentionDissonance,D],[p.attentionQuestion,s.U],[p.attentionValue,calc([s.E,s.T],(a,b)=>a+b)],[p.attentionContinuity,x.continuity],[1,x.relevance],[-p.attentionFatigue,s.F]];
+        attentionCoverage=terms.filter(z=>z[1]!==null).length/terms.length;
+        const previousEmotion=(emotionState.curiosity?.low||0)*.18+(emotionState.tension?.low||0)*.16-(emotionState.bored?.low||0)*.22;
+        const z=terms.reduce((a,[w,val])=>a+(val===null?0:w*val),0)+previousEmotion;
+        const competitors=[p.backgroundPriority];
+        for(const [key,other] of objects){if(key===objectKey||other.scope!==scope)continue;const idle=elapsed+t-other.lastTime;const inner=other.I*Math.pow(2,-idle/p.innerHalf),u=(other.U??0)*Math.pow(2,-idle/p.questionHalf),f=other.F*Math.pow(2,-idle/p.fatigueHalf);competitors.push(Math.log(.001+other.H)+p.attentionPersistence*inner+p.attentionQuestion*u-p.attentionFatigue*f);}
+        const scores=[z,...competitors].map(a=>a/p.attentionTemperature),maximum=Math.max(...scores);
+        s.A=Math.exp(scores[0]-maximum)/scores.reduce((a,b)=>a+Math.exp(b-maximum),0);
+        v.attention=s.A;v.internal=1-Math.exp(-s.I);
+        const gain=(1+p.gainMax*s.A/(s.A+p.gainHalf))*Math.exp(-s.F);
+        let ratePlus=0,rateMinus=0;
+        const rateDefs=[['sensory','感官舒适',v.pleasant,p.signalRate,0],['relation','关怀关系',v.care,p.signalRate,0],['memory','记忆唤起',v.memory,.6*p.signalRate,0],['craft','形式技艺',v.craft,.5*p.signalRate,0],['novelty','新鲜探索',v.novelty,.25*p.signalRate,0],['rhythm','节律吻合',v.timeMatch,.2*p.signalRate,0],['expectation','持续期待',v.expectation,p.rewardRate,0],['loss','持续损失',v.loss,0,p.signalRate],['pressure','持续压力',v.pressure,0,p.penaltyRate],['dissonance','未解释残差',v.dissonance,0,.35*p.signalRate],['boredom','重复低收益',v.boredom,0,p.boredomGain],['sensoryCost','刺激负担',v.sensoryCost,0,p.signalRate]];
+        for(const [id,label,value,a,b] of rateDefs){if(value===null)continue;const g=id==='sensoryCost'?1:gain;const plus=value*a*g,minus=value*b*g;ratePlus+=plus;rateMinus+=minus;pushSource(id,label,plus*dt,minus*dt,'rate','当前感受 × 配置系数 × 注意/疲劳');}
+        for(const proc of customRates){ratePlus+=proc.positive*gain;rateMinus+=proc.negative*gain;pushSource('custom:'+proc.id,proc.label||proc.id,proc.positive*gain*dt,proc.negative*gain*dt,'rate',proc.evidence);}
+        let eventPlus=0,eventMinus=0;
+        if(t===0)for(const e of stageEvents){e.gain=gain;e.effectivePositive=e.positive*gain;e.effectiveNegative=e.negative*gain;eventPlus+=e.effectivePositive;eventMinus+=e.effectiveNegative;pushSource(e.id,e.label,e.effectivePositive,e.effectiveNegative,'event',e.evidence);}
+        positiveTotal+=ratePlus*dt+eventPlus;negativeTotal+=rateMinus*dt+eventMinus;
+        v.positive=ratePlus+eventPlus/dt;v.negative=rateMinus+eventMinus/dt;
+        v.arousal=calc([v.surprise,v.pressure,v.sensoryCost],(sur,pr,c)=>clip(.5*sur+.35*pr+.4*c));
+        for(const e of emotionDefs){
+          const evaluated=e.terms.map(term=>{const value=expression(term.expression,v);return {weight:term.weight,value,contribution:value===null?null:term.weight*value,refs:refs(term.expression)};});
+          const known=evaluated.filter(t=>t.value!==null),weight=e.terms.reduce((a,t)=>a+t.weight,0),knownWeight=known.reduce((a,t)=>a+t.weight,0);
+          const raw=known.reduce((a,t)=>a+t.contribution,0)*p.emotionGain;
+          const low=1-Math.exp(-raw),high=1-Math.exp(-(raw+(weight-knownWeight)*p.emotionGain));
+          emotionState[e.id].low=smooth(emotionState[e.id].low,low,dt,p.emotionHalf);
+          emotionState[e.id].high=smooth(emotionState[e.id].high,high,dt,p.emotionHalf);
+          emotionSum[e.id].low+=emotionState[e.id].low*dt;emotionSum[e.id].high+=emotionState[e.id].high*dt;emotionSum[e.id].coverage+=knownWeight/weight*dt;
+          lastTerms[e.id]=evaluated;
+        }
+        for(const d of C.defs){const value=v[d.id]??null;last[d.id]=value;if(!Object.hasOwn(sum,d.id))sum[d.id]=0;if(value===null)sum[d.id]=null;else if(sum[d.id]!==null)sum[d.id]+=value*dt;if(value!==null)peak[d.id]=Math.max(peak[d.id]??-Infinity,value);}
+        if(t===0||durationDone+dt>=scene.duration-1e-9)trace.push({time:elapsed+t+dt,sceneId:scene.id,subject,object:scene.object,cfs:{...v},emotion:Object.fromEntries(emotionDefs.map(e=>[e.id,emotionState[e.id].low]))});
+        const content=calc([x.detail,x.continuity],(d,c)=>.25+.75*d+.3*c);
+        s.I=decayRate(s.I,p.innerRate*s.A*(content??0),dt,p.innerHalf);
+        s.F=decayRate(s.F,p.fatigueRate*s.A,dt,p.fatigueHalf);
+        s.M=1-(1-s.M)*Math.exp(-p.familiarityRate*s.A*dt);
+        s.H=1-(1-s.H)*Math.exp(-p.habitRate*s.A*dt);
+        durationDone+=dt;
+      }
+      s.D=D;
+      s.lastTime=elapsed+scene.duration;emotionRecord.lastTime=elapsed+scene.duration;
+      const cfs=Object.fromEntries(C.defs.map(d=>[d.id,sum[d.id]===null?null:sum[d.id]/scene.duration]));
+      cfs.positive=positiveTotal/scene.duration;cfs.negative=negativeTotal/scene.duration;
+      const emotional=Object.fromEntries(emotionDefs.map(e=>{const a=emotionSum[e.id],lo=a.low/scene.duration,hi=a.high/scene.duration;return [e.id,{value:Math.abs(hi-lo)<1e-8?lo:null,low:lo,high:hi,end:{...emotionState[e.id]},coverage:a.coverage/scene.duration,terms:lastTerms[e.id]}];}));
+      const missing=C.inputs.filter(d=>x[d.id]===null).map(d=>d.id);
+      const row={id:scene.id,title:scene.title||scene.id,description:scene.description||'',subject,world,level,object:scene.object,start:elapsed,end:elapsed+scene.duration,duration:scene.duration,cfs,peak,endState:last,emotions:emotional,signals:{positive:positiveTotal,negative:negativeTotal,complete:missing.length===0&&futureKnown,sources:[...sourceSum.values()],events:stageEvents},coverage:{inputs:1-missing.length/C.inputs.length,attention:attentionCoverage,missing},outcomes:clone([...ledger.values()])};
+      row.summary=phaseNarrative(row,emotionDefs);rows.push(row);elapsed+=scene.duration;
+    }
+    const mean=(id,emotion=false)=>{const xs=rows.map(r=>emotion?r.emotions[id]?.value:r.cfs[id]);return xs.every(finite)?xs.reduce((a,v,i)=>a+v*rows[i].duration,0)/elapsed:null;};
+    const style=C.styles[doc.style||'bittersweet'];
+    const targetParts=Object.entries(style.target).map(([id,[lo,hi]])=>{const v=mean(id,true);return v===null?null:Math.exp(-4*Math.max(lo-v,0,v-hi)**2);});
+    const after=rows.at(-1),warm=after.emotions.warmth?.value,calm=after.emotions.calm?.value;
+    const metrics={understanding:mean('grasp'),relationship:mean('care'),development:mean('novelty'),comfort:calc([mean('sensoryCost')],x=>1-x),craft:mean('craft'),afterglow:calc([warm,calm],(a,b)=>(a+b)/2),target:avg(targetParts)};
+    let low=0,unknownWeight=0;
+    for(const [id,w] of Object.entries(style.weights)){if(metrics[id]===null)unknownWeight+=w;else low+=w*metrics[id];}
+    if(emotionBank.size>1){warnings.push('输入包含多个主体/世界/层级，已分开递推；总分不跨主体混合。请分作品查看各主体评分。');low=0;unknownWeight=1;for(const key of Object.keys(metrics))metrics[key]=null;}
+    return {schema:'ap-aesthetics-result/1',engineVersion:C.version,assumptions:'人工标注输入与未校准系数；强度不是概率；不含自动B/C理解、真人数据或神经递质测量',title:doc.title,profile:clone(profile),style:style.label,parameters:p,emotionModel:emotionDefs,rows,trace,duration:elapsed,warnings:[...new Set(warnings)],score:{value:unknownWeight<1e-10?100*low:null,low:100*low,high:100*(low+unknownWeight),coverage:1-unknownWeight,metrics,weights:style.weights},totals:{positive:rows.reduce((a,r)=>a+r.signals.positive,0),negative:rows.reduce((a,r)=>a+r.signals.negative,0)}};
+  }
+  function resultCSV(result){
+    const keys=['start','end','title',...C.defs.map(d=>d.id),...result.emotionModel.map(e=>'emotion_'+e.id)];
+    const escape=x=>'"'+(typeof x==='string'&&/^[=+@\-\t\r]/.test(x)?"'":'')+String(x??'').replaceAll('"','""')+'"';
+    const rows=result.rows.map(r=>[r.start,r.end,r.title,...C.defs.map(d=>r.cfs[d.id]??''),...result.emotionModel.map(e=>r.emotions[e.id].value??'')]);
+    return '\uFEFF'+[keys,...rows].map(row=>row.map(escape).join(',')).join('\r\n');
+  }
+  return {evaluate,validate,expression,decayRate,resultCSV,clone};
+});
+</script><script>(function(root,factory){const C=typeof module==='object'&&module.exports?require('./catalog.js'):root.APCatalog;const a=factory(C);if(typeof module==='object'&&module.exports)module.exports=a;else root.APExamples=a;})(globalThis,function(C){
+  'use strict';
+  const cues = overrides => ({actualNovel:.15,predictedNovel:.1,actualExpected:.8,predictedExpected:.8,explanation:.55,evidence:.7,resolution:.1,question:.15,load:.3,detail:.5,continuity:.8,relevance:.7,progress:.2,care:.2,memory:.1,loss:.1,threat:0,safety:.9,selfRelevance:.5,unfairness:0,selfResponsibility:0,pleasant:.5,sensoryCost:.02,craft:.6,playfulness:0,scale:.1,expectedInterval:2,actualInterval:2,order:.9,spatial:.9,distance:1,...overrides});
+  const pending=(id,label,p,reward,penalty,extra={})=>({id,label,status:'pending',p,reward,penalty,baselineGood:0,baselineBad:0,evidence:'改编分镜的人工作品线索标注',...extra});
+  const base={schema:'ap-aesthetics/1',title:'麦琪的礼物 · 180 秒改编',subject:'target-viewer',style:'bittersweet',profile:{...C.profile},parameters:{...C.parameters},emotionModel:JSON.parse(JSON.stringify(C.emotions)),annotationNote:'原作情节取自欧·亨利《麦琪的礼物》；分段时长、线索强度、观众先验与配乐间隔均为本原型人工假设。模型未自动阅读影片，输出不是人类测量。',scenes:[
+    {id:'m1',title:'一美元八十七美分',description:'德拉数钱。明天就是圣诞节，她希望给吉姆一份像样的礼物。',object:'夫妻与礼物',duration:18,cues:cues({explanation:.35,evidence:.65,question:.55,detail:.65,care:.25,loss:.3,relevance:.55}),outcomesKnown:true,outcomes:[pending('gift','买到合适礼物',.3,.65,0)]},
+    {id:'m2',title:'两件珍宝',description:'镜头建立德拉的长发与吉姆珍爱的祖传金表，让后面的选择有具体代价。',object:'夫妻与礼物',duration:24,cues:cues({explanation:.58,evidence:.85,question:.45,care:.4,memory:.2,craft:.75,progress:.3,detail:.55}),outcomesKnown:true,outcomes:[]},
+    {id:'m3',title:'卖掉长发',description:'她决定卖掉长发。困境有了解法，也真实失去了一件珍爱的东西。',object:'夫妻与礼物',duration:23,cues:cues({actualNovel:.85,predictedNovel:.25,actualExpected:.4,predictedExpected:.65,explanation:.7,evidence:.85,question:.4,resolution:.2,care:.6,loss:.8,selfRelevance:.65,detail:.8,progress:.5}),outcomesKnown:true,outcomes:[pending('gift','买到合适礼物',.95,.65,0)]},
+    {id:'m4',title:'买到表链',description:'她想象吉姆拿出金表，配上这条表链的样子。送礼期待变得具体。',object:'夫妻与礼物',duration:23,cues:cues({explanation:.78,evidence:.9,resolution:.45,question:.2,care:.65,loss:.55,progress:.7,pleasant:.6,memory:.15}),outcomesKnown:true,outcomes:[{id:'gift',label:'买到合适礼物',status:'realized',actualPositive:.5,actualNegative:0,evidence:'已经买到表链'},pending('use','礼物能够使用',.95,.7,0),pending('reject','对短发的拒绝',.25,0,.5)]},
+    {id:'m5',title:'他为什么愣住',description:'吉姆看到短发愣住。观众暂时有多种解释，原先预期的直接喜悦没有出现。',object:'夫妻与礼物',duration:27,cues:cues({actualNovel:.9,predictedNovel:.15,actualExpected:.1,predictedExpected:.9,explanation:.2,evidence:.6,resolution:0,question:.9,load:.6,detail:.3,care:.35,loss:.45,threat:.45,safety:.65,progress:.72,actualInterval:3}),outcomesKnown:true,outcomes:[pending('reject','对短发的拒绝',.65,0,.5)]},
+    {id:'m6',title:'发梳揭晓',description:'他仍然爱她，并拿出她心仪的发梳。表情有了解释，梳子暂时无法用于短发。',object:'夫妻与礼物',duration:25,cues:cues({actualNovel:.95,predictedNovel:.2,actualExpected:.75,predictedExpected:.85,explanation:.85,evidence:.95,resolution:.65,question:.4,detail:.9,care:.9,loss:.65,memory:.25,safety:.98,selfRelevance:.7,progress:.83}),outcomesKnown:true,outcomes:[{id:'reject',label:'对短发的拒绝',status:'ruled_out',actualPositive:0,actualNegative:0,evidence:'明确表达仍然爱她'}]},
+    {id:'m7',title:'他也卖掉了金表',description:'德拉拿出表链，吉姆说明自己卖掉金表买了发梳。此前线索被重新组织，双方的选择互相映照。',object:'夫妻与礼物',duration:17,cues:cues({actualNovel:1,predictedNovel:.08,actualExpected:.9,predictedExpected:.95,explanation:.98,evidence:1,resolution:.9,question:.06,detail:1,care:1,loss:.8,memory:.35,selfRelevance:.85,craft:.95,progress:.98,actualInterval:2.4}),outcomesKnown:true,outcomes:[{id:'use',label:'礼物能够立即使用',status:'ruled_out',actualPositive:0,actualNegative:0,evidence:'金表与长发均已卖掉，实用期待落空'}]},
+    {id:'m8',title:'把礼物收好，先吃饭吧',description:'两人收好礼物，回到平常的生活动作。物质问题没有消失，互相照顾的关系得以保留。',object:'夫妻与礼物',duration:23,cues:cues({actualNovel:.1,predictedNovel:.08,actualExpected:.95,predictedExpected:.95,explanation:.98,evidence:1,resolution:.8,question:0,load:.12,detail:.2,care:.95,loss:.3,memory:.6,selfRelevance:.8,pleasant:.75,craft:.8,progress:1,actualInterval:2}),outcomesKnown:true,outcomes:[]}
+  ]};
+  const clone=x=>JSON.parse(JSON.stringify(x));
+  const variants=[
+    {id:'original',label:'完整铺垫',description:'保留珍宝、相互牺牲与结尾静场。'},
+    {id:'spoiler',label:'提前揭晓',description:'第 2 段提前透露吉姆卖表；后续信息不再同样意外，关系价值仍可存在。'},
+    {id:'no_setup',label:'删去珍宝铺垫',description:'移除第 2 段，降低后段关系/代价线索的可理解度；变化假设可编辑。'},
+    {id:'long_wait',label:'延长无信息等待',description:'“他为什么愣住”延长至 75 秒，同时降低新细节供给。'},
+    {id:'no_tail',label:'删去结尾静场',description:'末段缩至 2 秒，观察情绪恢复与回味输入的变化。'}
+  ];
+  function make(id='original'){
+    const d=clone(base);d.variant=id;
+    if(id==='spoiler'){
+      d.title+=' · 提前揭晓';const a=d.scenes[1],b=d.scenes[4],c=d.scenes[5],e=d.scenes[6];
+      a.description+=' 这个版本在此额外给出吉姆卖表买梳的镜头。';a.cues.actualNovel=.95;a.cues.predictedNovel=.1;a.cues.care=.75;a.cues.loss=.65;a.cues.explanation=.85;
+      a.outcomes.push(pending('use','礼物能使用',.05,.7,0));
+      d.scenes[3].outcomes=d.scenes[3].outcomes.map(o=>o.id==='use'?{...o,p:.05}:o.id==='reject'?{...o,p:.05}:o);
+      b.cues.predictedNovel=.85;b.cues.actualExpected=.8;b.cues.explanation=.8;b.cues.question=.2;b.cues.threat=.05;b.outcomes[0].p=.05;
+      c.cues.predictedNovel=.9;c.cues.question=.1;c.cues.explanation=.95;e.cues.predictedNovel=.96;e.cues.resolution=.15;
+    } else if(id==='no_setup'){
+      d.title+=' · 缺少铺垫';d.scenes.splice(1,1);
+      for(const s of d.scenes.slice(1)){s.cues.care*=.65;s.cues.loss*=.7;s.cues.evidence*=.8;s.cues.explanation*=.8;s.cues.selfRelevance*=.8;}
+    } else if(id==='long_wait'){
+      d.title+=' · 久等';d.scenes[4].duration=75;d.scenes[4].cues.detail=.02;d.scenes[4].cues.care=.15;
+    } else if(id==='no_tail'){
+      d.title+=' · 仓促收尾';d.scenes[7].duration=2;
+    }
+    return d;
+  }
+  function blank(){return {schema:'ap-aesthetics/1',title:'我的作品',subject:'target-viewer',style:'bittersweet',profile:clone(C.profile),parameters:clone(C.parameters),emotionModel:clone(C.emotions),annotationNote:'请标注观众此刻实际可见的线索；未知保留空白。',scenes:[{id:'scene-1',title:'第一段',description:'',duration:10,object:'主要注意对象',outcomesKnown:false,outcomes:[],cues:Object.fromEntries(C.inputs.map(f=>[f.id,null]))}]};}
+  return {make,blank,variants,base};
+});
+</script><script>(function(){
+ 'use strict';
+ const C=window.APCatalog,E=window.APEngine,X=window.APExamples,$=id=>document.getElementById(id);
+ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const fmt=(v,scale=100)=>v===null||v===undefined?'—':(v*scale).toFixed(scale===100?0:2);
+ const storageKey='ap-aesthetics-calculator-v1';
+ let doc=X.make(),selected=0,result,comparison,compareId='spoiler',storageOk=true,previousDoc=null;
+ try{const raw=localStorage.getItem(storageKey);if(raw){const saved=JSON.parse(raw);E.validate(saved);doc=saved;}}catch(e){storageOk=false;}
+ const reportError=e=>{ $('status').className='status error';$('status').textContent=e.message||String(e);};
+ const save=()=>{try{localStorage.setItem(storageKey,JSON.stringify(doc));$('saveState').textContent='草稿已保存在当前浏览器 · '+new Date().toLocaleTimeString('zh-CN');}catch(e){storageOk=false;$('saveState').textContent='浏览器未允许保存，请使用「保存作品」下载 JSON';}};
+ function recalculate(message='已根据当前输入重新计算。'){
+   try{const next=E.evaluate(doc);let cmp=null;if(compareId!=='none'){const other=X.make(compareId);other.profile=E.clone(doc.profile);other.parameters=E.clone(doc.parameters);other.emotionModel=E.clone(doc.emotionModel);other.style=doc.style;cmp=E.evaluate(other);}result=next;comparison=cmp;selected=Math.min(selected,doc.scenes.length-1);save();render();$('status').className='status';$('status').textContent=message+(storageOk?'':' 浏览器存储不可用，请保存 JSON。');}
+   catch(e){reportError(e);}
+ }
+ function replaceDoc(next,message){try{E.evaluate(next);previousDoc=E.clone(doc);doc=next;selected=0;recalculate(message);}catch(e){reportError(e);}}
+ function optionList(arr,value){return arr.map(x=>`<option value="${esc(x.id)}" ${x.id===value?'selected':''}>${esc(x.label)}</option>`).join('');}
+ function metric(label,number,sub){return `<div class="metric"><div class="label">${esc(label)}</div><div class="number">${esc(number)}</div><div class="sub">${esc(sub)}</div></div>`;}
+ function render(){
+   $('workTitle').value=doc.title;$('styleSelect').value=doc.style;$('annotationNote').textContent=doc.annotationNote||'';
+   const cov=result.rows.reduce((a,r)=>a+r.coverage.inputs*r.duration,0)/result.duration;
+   const score=result.score.value===null?`${result.score.low.toFixed(0)}–${result.score.high.toFixed(0)}`:result.score.value.toFixed(1);
+   const delta=comparison&&result.score.value!==null&&comparison.score.value!==null?`对照差 ${result.score.value-comparison.score.value>=0?'+':''}${(result.score.value-comparison.score.value).toFixed(1)} · 同观众与参数`:'缺测保留区间，不自动补零';
+   $('metrics').innerHTML=metric('目标下的演示指数',score,delta)+metric('逐项感受与状态',C.defs.length+' 项',C.emotions.length+' 类组合情绪 · 同时存在')+metric('正向 / 负向总信号',`${result.totals.positive.toFixed(1)} / ${result.totals.negative.toFixed(1)}`,'任意模型单位 · 两条独立账')+metric('输入标注覆盖',Math.round(cov*100)+'%',result.rows.length+' 个阶段 · '+result.duration.toFixed(0)+' 秒 · 非预测置信度');
+   $('sceneList').innerHTML=doc.scenes.map((s,i)=>`<button class="scene-btn ${i===selected?'active':''}" data-scene="${i}" aria-pressed="${i===selected}"><span class="seq">${String(i+1).padStart(2,'0')}</span><span class="name">${esc(s.title)}</span><span class="seconds">${s.duration}s</span></button>`).join('');
+   renderEditor();renderChart();renderMatrix();renderDetail();renderCards();renderSettings();
+   $('warnings').innerHTML=result.warnings.length?'<h3>数据与身份提示</h3>'+result.warnings.map(w=>'<p>'+esc(w)+'</p>').join(''):'';
+ }
+ function renderEditor(){
+   const s=doc.scenes[selected];
+   let html=`<label class="wide-field">阶段名称<input data-scene-field="title" value="${esc(s.title)}"></label><label class="wide-field">实际呈现与线索<textarea data-scene-field="description">${esc(s.description)}</textarea></label><label class="field">时长 / 秒<input type="number" min=".1" max="3600" step=".5" data-scene-field="duration" value="${s.duration}"></label><label class="wide-field">持续注意对象<input data-scene-field="object" value="${esc(s.object)}"></label><div class="scene-actions"><button id="moveUp" ${selected===0?'disabled':''}>上移</button><button id="moveDown" ${selected===doc.scenes.length-1?'disabled':''}>下移</button><button id="deleteScene" ${doc.scenes.length===1?'disabled':''}>删除</button></div>`;
+   for(const group of [...new Set(C.inputs.map(f=>f.group))])html+=`<details ${group==='预测与解释'?'open':''}><summary>${esc(group)}</summary>${C.inputs.filter(f=>f.group===group).map(f=>`<label class="field" title="${esc(f.help)}"><span>${esc(f.label)}</span><input type="number" min="${f.min}" max="${f.max}" step="${f.step}" placeholder="未知" data-cue="${f.id}" value="${s.cues[f.id]??''}" aria-label="${esc(f.label)}"></label>`).join('')}</details>`;
+   html+=`<details><summary>未来结果与兑现（结构化标注）</summary><p>每个结果沿用同一 ID。兑现从开放预测退场不再额外制造失望。空数组表示本段不更新已有结果。</p><label class="wide-field"><input id="outcomesKnown" type="checkbox" ${s.outcomesKnown?'checked':''} style="display:inline;width:auto"> 此段结果预测已标注完整</label><textarea id="outcomesEditor" class="outcome-editor" aria-label="未来结果 JSON">${esc(JSON.stringify(s.outcomes||[],null,2))}</textarea><button id="applyOutcomes">应用结果账</button><p>pending: p / reward / penalty；realized、ruled_out: actualPositive / actualNegative。首次预测用 baselineGood / baselineBad 声明比较基线。</p></details>`;
+   html+=`<details><summary>额外过程（可插入的信号来源）</summary><p>kind 为 event 或 rate；每份贡献保留 id、positive、negative、evidence。同一事件 ID 不会重复计奖。</p><textarea id="processEditor" class="outcome-editor" aria-label="额外过程 JSON">${esc(JSON.stringify(s.processes||[],null,2))}</textarea><button id="applyProcesses">应用过程</button></details>`;
+   $('sceneEditor').innerHTML=html;
+ }
+ const colors=['#538579','#d69076','#9c87ac','#c4a357','#6d8daa'];
+ const groups={cognition:['surprise','dissonance','unresolved','expectation','pressure'],emotion:['warmth','sadness','moved','relieved','calm'],attention:['attention','fatigue','internal','novelty','boredom']};
+ function renderChart(){
+   const mode=$('chartMode').value,ids=groups[mode],emotion=mode==='emotion';
+   const definition=id=>(emotion?result.emotionModel:C.defs).find(d=>d.id===id);
+   $('chartLegend').innerHTML=ids.map((id,i)=>`<span><i style="background:${colors[i]}"></i>${esc(definition(id)?.label||id)}</span>`).join('')+(comparison?'<span>实线：当前　虚线：对照</span>':'');
+   const width=900,height=240,left=32,right=12,top=12,bottom=32,end=Math.max(result.duration,comparison?.duration||0);
+   const x=t=>left+t/end*(width-left-right),y=v=>top+(1-v)*(height-top-bottom);
+   let svg=`<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${esc(mode)} 按实际秒数的阶段平均轨迹">`;
+   for(let k=0;k<=4;k++){const value=k/4;svg+=`<line class="axis" x1="${left}" x2="${width-right}" y1="${y(value)}" y2="${y(value)}"/><text x="2" y="${y(value)+3}">${value*100}</text>`;}
+   const row=result.rows[selected];svg+=`<rect x="${x(row.start)}" y="${top}" width="${Math.max(1,x(row.end)-x(row.start))}" height="${height-top-bottom}" fill="#648c6a" opacity=".07"/>`;
+   function draw(r,dashed){
+     for(let i=0;i<ids.length;i++){
+       const key=ids[i];let segments=[],points=[];
+       for(const r0 of r.rows){const v=emotion?r0.emotions[key]?.value:r0.cfs[key];if(v===null||v===undefined){if(points.length)segments.push(points);points=[];continue;}points.push([x((r0.start+r0.end)/2),y(Math.min(1,v)),r0]);}if(points.length)segments.push(points);
+       for(const pts of segments){svg+=`<polyline points="${pts.map(p=>p.slice(0,2).join(',')).join(' ')}" fill="none" stroke="${colors[i]}" stroke-width="${dashed?1.5:2.2}" ${dashed?'stroke-dasharray="5 5" opacity=".45"':''}/>`;if(!dashed)for(const pt of pts)svg+=`<circle cx="${pt[0]}" cy="${pt[1]}" r="3" fill="${colors[i]}"><title>${esc(pt[2].title)} · ${esc(definition(key)?.label||key)} ${fmt(emotion?pt[2].emotions[key].value:pt[2].cfs[key])}</title></circle>`;}
+     }
+   }
+   if(comparison)draw(comparison,true);draw(result,false);
+   for(let i=0;i<=6;i++){let t=end*i/6;svg+=`<text text-anchor="middle" x="${x(t)}" y="${height-8}">${Math.round(t)}s</text>`;}
+   svg+='</svg>';$('chart').innerHTML=svg;
+   $('chartNote').textContent='点位为阶段平均状态，横轴按实际时长；短促事件的峰值可在阶段明细查看。'+(comparison?' 对照：'+comparison.title+'（'+comparison.duration+' 秒）。':'');
+ }
+ function renderMatrix(){
+   const group=$('matrixGroup').value,defs=C.defs.filter(d=>group==='all'||d.group===group);let lastGroup='';
+   let html='<table class="matrix"><thead><tr><th>认知 / 评价 / 状态</th>'+result.rows.map((r,i)=>`<th data-scene="${i}" class="${i===selected?'chosen':''}" title="${esc(r.title)}">${String(i+1).padStart(2,'0')}<br>${esc(r.title.slice(0,7))}</th>`).join('')+'</tr></thead><tbody>';
+   for(const d of defs){if(d.group!==lastGroup){html+=`<tr class="group-row"><td>${esc(d.group)}</td><td colspan="${result.rows.length}"></td></tr>`;lastGroup=d.group;}
+     html+=`<tr><td title="${esc(d.help+' · '+d.source)}">${esc(d.label)}</td>`+result.rows.map((r,i)=>{const v=r.cfs[d.id],isSignal=d.group==='信号';const intensity=v===null?0:Math.min(1,isSignal?v*6:v);const bg=v===null?'#f0f1eb':`rgba(86,139,113,${(.04+.52*intensity).toFixed(3)})`;return `<td class="heat ${i===selected?'chosen':''}" data-scene="${i}" style="background:${bg}" title="${esc(d.label+'：'+(v===null?'缺少输入':isSignal?v.toFixed(4)+' 模型单位/秒':(v*100).toFixed(1)+'/100'))}">${fmt(v,isSignal?1:100)}</td>`;}).join('')+'</tr>';
+   }
+   $('matrix').innerHTML=html+'</tbody></table>';
+ }
+ const table=(heads,body)=>'<table class="data-table"><thead><tr>'+heads.map(h=>'<th>'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+body+'</tbody></table>';
+ function renderDetail(){
+   const r=result.rows[selected];$('detailTitle').textContent=r.title;$('detailTime').textContent=r.start+'–'+r.end+' 秒';
+   $('stageSummary').innerHTML='<div class="summary-text">'+r.summary.lines.map(x=>'<p>'+esc(x)+'</p>').join('')+'</div>';
+   $('emotionBars').innerHTML=result.emotionModel.map(e=>{const v=r.emotions[e.id];const color=/^#[0-9a-f]{6}$/i.test(e.color)?e.color:'#6b9286';return `<div class="emotion-item"><div class="emotion-head"><span>${esc(e.label)}</span><span>${v.value===null?fmt(v.low)+'–'+fmt(v.high)+' · 待补依据':fmt(v.value)}</span></div><div class="bar-track"><span class="bar-range" style="left:${v.low*100}%;width:${(v.high-v.low)*100}%;background:${color}"></span><span class="bar-fill" style="width:${v.low*100}%;background:${color}"></span></div></div>`;}).join('');
+   $('stateTable').innerHTML=table(['感受 / 状态','均值','峰值','结束','定义 / 来源'],C.defs.map(d=>{const scale=d.group==='信号'?1:100;return `<tr><td>${esc(d.label)}</td><td>${fmt(r.cfs[d.id],scale)}</td><td>${fmt(r.peak[d.id],scale)}</td><td>${fmt(r.endState[d.id],scale)}</td><td>${esc(d.help)}<br><span class="muted">${esc(d.source)}</span></td></tr>`;}).join(''));
+   $('sourceTable').innerHTML='<p class="hint">下面是已标注来源的模型贡献；缺少来源不会凭空补零为完整体验。一次事件与按秒积分的持续量分开。</p>'+table(['来源','正向总量','负向总量','类型','依据'],r.signals.sources.map(s=>`<tr><td>${esc(s.label)}</td><td>${s.positive.toFixed(3)}</td><td>${s.negative.toFixed(3)}</td><td>${s.kind==='event'?'一次事件':'持续积分'}</td><td>${esc(s.evidence)}</td></tr>`).join(''));
+   $('combinationTable').innerHTML=table(['组合情绪','本段均值','依据覆盖','表达式来源'],result.emotionModel.map(e=>{const v=r.emotions[e.id];return `<tr><td>${esc(e.label)}</td><td>${v.value===null?fmt(v.low)+'–'+fmt(v.high):fmt(v.value)}</td><td>${Math.round(v.coverage*100)}%</td><td>${v.terms.map(t=>esc(t.refs.map(id=>C.defs.find(d=>d.id===id)?.label||id).join(' × '))+' · 权重 '+t.weight+(t.value===null?' · 未知':'')).join('<br>')}</td></tr>`;}).join(''));
+ }
+ function renderCards(){
+   $('stageCards').innerHTML=result.rows.map((r,i)=>`<article class="stage-card ${i===selected?'active':''}" data-scene="${i}"><div class="time">${String(i+1).padStart(2,'0')} / ${r.start}–${r.end} 秒</div><h3>${esc(r.title)}</h3><div>${r.summary.top.map(t=>`<span class="chip">${esc(t.label)} ${fmt(t.value)}</span>`).join('')}</div><p>${esc(r.summary.lines.slice(1,3).join(' ')||r.summary.lines[0]||'缺少足够的组合依据。')}</p></article>`).join('');
+   $('scoreDetails').innerHTML='<p class="muted small">以下是预先选定艺术目标下的演示权重。它没有真人评分标定，不适合跨目标直接排名。</p>'+table(['指标','当前','对照','权重'],Object.entries(result.score.metrics).map(([k,v])=>`<tr><td>${esc(C.scoreLabels[k])}</td><td>${fmt(v)}</td><td>${comparison?fmt(comparison.score.metrics[k]):'—'}</td><td>${fmt(result.score.weights[k])}%</td></tr>`).join(''));
+ }
+ const profileLabels={relationship:'关系线索敏感度',memory:'回忆唤起敏感度',lossSensitivity:'损失敏感度',sensorySensitivity:'刺激负担敏感度',initialFamiliarity:'初始熟悉度',initialHabit:'初始习惯基础',initialFatigue:'初始短期疲劳',initialExplanation:'初始解释支持'};
+ function renderSettings(){
+   $('profileEditor').innerHTML=`<label class="wide-field">观众画像<input data-profile="name" value="${esc(doc.profile.name)}"></label>`+Object.entries(profileLabels).map(([id,label])=>`<label class="field">${esc(label)}<input data-profile="${id}" type="number" min="0" max="${['initialFamiliarity','initialHabit','initialExplanation'].includes(id)?1:3}" step=".05" value="${doc.profile[id]}"></label>`).join('');
+   $('parameterEditor').innerHTML=Object.entries(C.parameterLabels).map(([id,label])=>`<label class="field">${esc(label)}<input data-param="${id}" type="number" min="0" step="${/Half|Scale/.test(id)?1:.01}" value="${doc.parameters[id]}"></label>`).join('');
+   const chosen=$('emotionSelect').value||doc.emotionModel[0].id;
+   $('emotionSelect').innerHTML=optionList(doc.emotionModel,chosen);renderEmotionEditor();$('allParameters').value=JSON.stringify(doc.parameters,null,2);
+ }
+ function renderEmotionEditor(){const e=doc.emotionModel.find(e=>e.id===$('emotionSelect').value)||doc.emotionModel[0];$('emotionFormula').value=JSON.stringify(e,null,2);}
+ function download(name,content,type){const u=URL.createObjectURL(new Blob([content],{type}));const a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1000);}
+ function update(mutator,msg){const prev=E.clone(doc);try{mutator();E.evaluate(doc);previousDoc=prev;recalculate(msg);}catch(e){doc=prev;reportError(e);}}
+ document.addEventListener('click',e=>{
+   const el=e.target.closest('[data-scene]');if(el){selected=Number(el.dataset.scene);render();return;}
+   const id=e.target.closest('button')?.id;if(!id)return;
+   if(id==='restoreSample'){replaceDoc(X.make($('exampleSelect').value),'已载入示例。对照中的观众、参数与当前版本一致。');}
+   if(id==='newWork'){replaceDoc(X.blank(),'已建立空白作品；尚未标注的项目保留未知。');compareId='none';$('compareSelect').value='none';recalculate();}
+   if(id==='importWork')$('fileInput').click();
+   if(id==='exportWork')download('AP-作品.json',JSON.stringify(doc,null,2),'application/json');
+   if(id==='exportResult')download('AP-轨迹计算.json',JSON.stringify({input:doc,result,comparison},null,2),'application/json');
+   if(id==='exportCSV')download('AP-阶段状态.csv',E.resultCSV(result),'text/csv;charset=utf-8');
+   if(id==='addScene')update(()=>{const b=X.blank().scenes[0];b.id='scene-'+Date.now();b.title='新的阶段';doc.scenes.push(b);selected=doc.scenes.length-1;},'已增加一个未标注阶段。');
+   if(id==='deleteScene'&&doc.scenes.length>1)update(()=>{doc.scenes.splice(selected,1);selected=Math.min(selected,doc.scenes.length-1);});
+   if(id==='moveUp'&&selected>0)update(()=>{[doc.scenes[selected-1],doc.scenes[selected]]=[doc.scenes[selected],doc.scenes[selected-1]];selected--;},'顺序已改变，后续状态重新递推。');
+   if(id==='moveDown'&&selected<doc.scenes.length-1)update(()=>{[doc.scenes[selected+1],doc.scenes[selected]]=[doc.scenes[selected],doc.scenes[selected+1]];selected++;},'顺序已改变，后续状态重新递推。');
+   if(id==='applyOutcomes')update(()=>{doc.scenes[selected].outcomes=JSON.parse($('outcomesEditor').value);doc.scenes[selected].outcomesKnown=$('outcomesKnown').checked;});
+   if(id==='applyProcesses')update(()=>doc.scenes[selected].processes=JSON.parse($('processEditor').value));
+   if(id==='applyEmotion')update(()=>{const next=JSON.parse($('emotionFormula').value);const ix=doc.emotionModel.findIndex(e=>e.id===$('emotionSelect').value);doc.emotionModel[ix]=next;},'组合公式已应用；全部阶段重新计算。');
+   if(id==='applyParameters')update(()=>doc.parameters=JSON.parse($('allParameters').value),'参数已应用。');
+   if(id==='reportToggle')$('scoreDetails').hidden=!$('scoreDetails').hidden;
+ });
+ document.addEventListener('change',e=>{
+   const el=e.target;
+   if(el.dataset.cue)update(()=>doc.scenes[selected].cues[el.dataset.cue]=el.value.trim()===''?null:Number(el.value));
+   else if(el.dataset.sceneField)update(()=>doc.scenes[selected][el.dataset.sceneField]=el.dataset.sceneField==='duration'?Number(el.value):el.value);
+   else if(el.dataset.profile)update(()=>doc.profile[el.dataset.profile]=el.dataset.profile==='name'?el.value:Number(el.value));
+   else if(el.dataset.param)update(()=>doc.parameters[el.dataset.param]=Number(el.value));
+   else if(el.id==='workTitle')update(()=>doc.title=el.value);
+   else if(el.id==='styleSelect')update(()=>doc.style=el.value);
+   else if(el.id==='compareSelect'){compareId=el.value;recalculate('已切换对照，双方使用同一观众与公式参数。');}
+   else if(el.id==='chartMode')renderChart();else if(el.id==='matrixGroup')renderMatrix();else if(el.id==='emotionSelect')renderEmotionEditor();
+ });
+ $('fileInput').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{if(f.size>5*1024*1024)throw new Error('初版交互导入支持 5 MB 以内的作品 JSON');replaceDoc(JSON.parse(await f.text()),'作品已导入并重算。');}catch(err){reportError(err);}e.target.value='';});
+ $('exampleSelect').innerHTML=optionList(X.variants,doc.variant||'original');$('compareSelect').innerHTML=optionList([{id:'none',label:'不显示对照'},...X.variants],compareId);$('styleSelect').innerHTML=optionList(Object.entries(C.styles).map(([id,s])=>({id,label:s.label})),doc.style);
+ recalculate('已载入 '+doc.title+'。先点选一个阶段，查看它的感受组合和依据。');
+ // Explicit public diagnostic readout for local acceptance; no network or secrets.
+ window.APApp={getDocument:()=>E.clone(doc),getResult:()=>E.clone(result),getComparison:()=>comparison?E.clone(comparison):null,load:next=>replaceDoc(next,'已载入指定作品。')};
+})();
+</script></body></html>

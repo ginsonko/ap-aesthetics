@@ -1,0 +1,11 @@
+# Local renders and acceptance output. Public repository contains the source and cover.
+audio/
+frames/
+results/
+*.wav
+*.mp4
+page-*.png
+contact-sheet.jpg
+audio-timing.json
+*-acceptance*.json
+CHECKPOINT.json

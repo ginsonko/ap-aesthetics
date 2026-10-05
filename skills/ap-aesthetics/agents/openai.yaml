@@ -1,0 +1,6 @@
+interface:
+  display_name: "AP 观众心景"
+  short_description: "评估作品的认知与情绪轨迹，比较创作版本，并用独立观众反馈校准"
+  default_prompt: "使用 $ap-aesthetics 分析当前作品的观众体验、薄弱段落与节奏，提出可比较的改进方案。"
+policy:
+  allow_implicit_invocation: true

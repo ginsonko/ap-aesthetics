@@ -1,0 +1,35 @@
+{
+  "schema": "ap-aesthetics-calibration-acceptance/1",
+  "completed_at": "2026-10-05T12:03:37.958Z",
+  "status": "implemented-and-checked",
+  "tests": {
+    "command": "node --test tests/calibration.test.js",
+    "passed": 20,
+    "failed": 0,
+    "scope": "Software behavior, source-group isolation, fixed heldout objective, input validation and shared engine plumbing; not empirical AP accuracy"
+  },
+  "public_data": {
+    "command": "node scripts/public-data-emobank.js --download --out examples/calibration-emobank-summary.json",
+    "actual_reader_rows": 10325,
+    "actual_writer_rows": 10279,
+    "matched_rows": 10062,
+    "heldout_source_groups": 22,
+    "heldout_rows": 1763,
+    "ap_accuracy": false
+  },
+  "review_fix": "Search channels previously inspected all observed labels; now only train/validation can determine the objective. Test-only channels and test missingness cannot change selected parameters or model identity.",
+  "source_files": {
+    "lib/calibration.js": "78a8034c1af217f7f5ca100cd29e50ea165130fed8edfc91621f086a0fe0c4ed",
+    "tests/calibration.test.js": "e41c4e680c57ac12a2135866f6abb665db11430317b902ce45c4ab610e5c6470",
+    "docs/CALIBRATION.md": "a818b1c10d5f855cb40fa1e2e1dccfb12606fe806504d6731657d0231bf095b5",
+    "scripts/public-data-emobank.js": "80b7818ccd5cff4e3dfb90143d66bd0fd96602eadb63cb92756df1e50618c851",
+    "examples/calibration-synthetic.json": "dfd5471e17ef54c8411b223e74bfd10b3405926de08f478e731b5a4ade0de231",
+    "examples/calibration-synthetic-model.json": "9c956003d5c24b09b30d4c80f77d80f2d3d309ac31218ec681a5ae0dba09fdab",
+    "examples/calibration-tuning-synthetic.json": "fca7744948908cc86f060c5cfe05e6e0f3711ebec1d4381142cf6bf803aeaef0",
+    "examples/calibration-tuning-options.json": "8cf80ee8e6d4a1e84a1bc6cc48d9ef61c0052055917849d39170baf4c9e2d561",
+    "examples/calibration-tuning-result.json": "dfcf97e2ef49fb167c5c329dea38496bd47efe6c0b6c272a83bd15aecfef10c6",
+    "examples/calibration-emobank-summary.json": "f170e9a98d32cec69a00a7e2a2b56e3bde67cb574104261a7944b4e56c03ad54"
+  },
+  "in_flight_requests": [],
+  "remaining": "Collect independent AP cue annotations and target-population responses before claiming AP predictive validity. Main author integrates MCP/CLI/Skill. No changes to engine defaults."
+}
