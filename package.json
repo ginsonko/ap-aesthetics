@@ -18,5 +18,5 @@
     "data:emobank": "node scripts/public-data-emobank.js"
   },
   "dependencies": {"@modelcontextprotocol/sdk": "1.32.0"},
-  "files": ["bin", "lib", "web", "dist", "skills", "examples", "docs", "scripts", "index.html", "README.md", "README.zh-CN.md", "LICENSE", "NOTICE.md"]
+  "files": ["bin", "lib", "web", "dist", "skills", "examples", "docs", "scripts", "index.html", "README.md", "README.zh-CN.md", "LICENSE", "NOTICE.md", "demo/index.html", "demo/experience.css", "demo/experience.js", "demo/experience-data.js", "demo/evaluate.js", "demo/render.py", "demo/speech.ps1", "demo/narration.json", "demo/predictions.json", "demo/comparison.json", "demo/cover.png"]
 }
